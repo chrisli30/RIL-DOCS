@@ -33,6 +33,12 @@ git push
 4. Wait for review and make adjustment commits
 5. Squash merge Pull Request upon approval and delete the branch on Github
 
+### Formatting
+1. The first level header of a page should be H2, and cap first letter of every word like `#### First Level Header`.
+1. The second level is H4 and doens't need to cap the first letter. For example, `## Second level header`
+1. The third level use bold. For example, `__This is the third leve__`
+
+
 ### Markdown Basics
 
 1. Callout
