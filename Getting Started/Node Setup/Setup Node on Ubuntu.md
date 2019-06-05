@@ -60,7 +60,7 @@ fa9d10f1e902f300a98406f9575ac4e0d6172c9500384e417cf3c1157b7aadfb  rskj_0.6.2_tru
 088182552ac5ea063ed2a1f4f47942a3d55fc29e29c87dc73d0c7bf9c3bf2171  rskj_0.6.2_xenial_i386.deb
 ```
 
-### After installation"
+### After installation
 
 The installer will configure your node in the following paths:
 
