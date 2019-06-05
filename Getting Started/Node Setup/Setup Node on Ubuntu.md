@@ -1,6 +1,6 @@
 
-Minimal Requirement
-> Make sure your system meet the [minimal requirement](http://google.com) before installing the RSK nodes on it.  
+> Minimal Requirement
+Make sure your system meet the [minimal requirement](http://google.com) before installing the RSK nodes on it.  
 
 
 
