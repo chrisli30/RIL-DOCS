@@ -47,13 +47,15 @@ All the items in this list are the basic information of a block.
 
 * Click the link in the title location to update the list.
 
-* sClick the link at the bottom to display the full list.
+* Click the link at the bottom to display the full list.
 
 <div align="center"><img width="100%" src="https://files.readme.io/9d9f63d-explorer-blocks-list.png" alt="list of blocks"/></div>
 
 ##### List of Transactions
 
 All the items in this list are the basic information of a transaction.
+
+* Click the link at the bottom to display the full list.
 
 <div align="center"><img width="100%" src="https://files.readme.io/58284d2-explorer-transaction-list.png" alt="list of transactions"/></div>
 
