@@ -1,11 +1,11 @@
 
-####Overview Of The Explorer
+## Overview Of The Explorer
 
 You can browse the overview of RSK on this page with https://explorer.rsk.co/  like below.
 
 <div align="center"><img width="100%" src="https://files.readme.io/291a4a2-explorer-rsk-co.png" alt="overview of explorer"/></div>
 
-##### Jump to other columns
+## Jump to other columns
 
 If you want to view some specific information, you can jump through the tab bar below.
 
@@ -16,8 +16,7 @@ If you want to view some specific information, you can jump through the tab bar 
 
 <div align="center"><img width="100%" src="https://files.readme.io/1e4fe21-explorer-search-box.png" alt="search box"/></div>
 
-##### Last block information
-
+## Last block information
 
 The next section is a panel about the last block.
 
@@ -35,13 +34,13 @@ The next section is a panel about the last block.
 
 <div align="center"><img width="100%" src="https://files.readme.io/96d1a37-explorer-last-block-update-switcher.png" alt="switcher for auto update"/></div>
 
-##### Last block Transactions graph
+## Last block Transactions graph
 
 The bar chart below shows the frequency and number of transactions. 
 
 <div align="center"><img width="100%" src="https://files.readme.io/d3f99e1-explorer-last-block-transaction-graph.png" alt="bar chart of transactions"/></div>
 
-##### List of blocks
+## List of blocks
 
 All the items in this list are the basic information of a block.
 
@@ -51,13 +50,10 @@ All the items in this list are the basic information of a block.
 
 <div align="center"><img width="100%" src="https://files.readme.io/9d9f63d-explorer-blocks-list.png" alt="list of blocks"/></div>
 
-##### List of Transactions
+## List of Transactions
 
 All the items in this list are the basic information of a transaction.
 
 * Click the link at the bottom to display the full list.
 
 <div align="center"><img width="100%" src="https://files.readme.io/58284d2-explorer-transaction-list.png" alt="list of transactions"/></div>
-
-
-
