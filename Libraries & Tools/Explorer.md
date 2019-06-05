@@ -10,7 +10,7 @@ You can browse the overview of RSK on this page with https://explorer.rsk.co/  l
 If you want to view some specific information, you can jump through the tab bar below.
 
 <div align="center"><img width="100%" src="https://files.readme.io/4b3e32c-explore-tab.png" alt="tab of explorer"/></div>
-##### Search for some information you want
+#### Search for some information you want
 
 * You can search for the information you want by entering the address,block number or tx hash in the search box.
 
