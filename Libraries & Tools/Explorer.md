@@ -5,7 +5,7 @@ You can browse the overview of RSK on this page with https://explorer.rsk.co/  l
 
 <div align="center"><img width="100%" src="https://files.readme.io/291a4a2-explorer-rsk-co.png" alt="overview of explorer"/></div>
 
-## Jump to other columns
+## Switch between Tabs
 
 If you want to view some specific information, you can jump through the tab bar below.
 
@@ -16,7 +16,7 @@ If you want to view some specific information, you can jump through the tab bar 
 
 <div align="center"><img width="100%" src="https://files.readme.io/1e4fe21-explorer-search-box.png" alt="search box"/></div>
 
-## Last block information
+## Last Block Information
 
 The next section is a panel about the last block.
 
@@ -34,13 +34,13 @@ The next section is a panel about the last block.
 
 <div align="center"><img width="100%" src="https://files.readme.io/96d1a37-explorer-last-block-update-switcher.png" alt="switcher for auto update"/></div>
 
-## Last block Transactions graph
+## Last Block Transactions
 
 The bar chart below shows the frequency and number of transactions. 
 
 <div align="center"><img width="100%" src="https://files.readme.io/d3f99e1-explorer-last-block-transaction-graph.png" alt="bar chart of transactions"/></div>
 
-## List of blocks
+## List of Blocks
 
 All the items in this list are the basic information of a block.
 
