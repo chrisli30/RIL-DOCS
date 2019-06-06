@@ -63,4 +63,3 @@ sudo systemctl enable rsk.service
 sudo service rsk start
 
 ```
-![CentOS](https://files.readme.io/55a852b-1280px-Centos-logo-light.svg.png)

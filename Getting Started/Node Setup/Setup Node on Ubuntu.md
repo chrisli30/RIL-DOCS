@@ -1,14 +1,10 @@
 
-Minimal Requirement
-> Make sure your system meet the [minimal requirement](http://google.com) before installing the RSK nodes on it.  
-
-
+> Minimum Requirement
+Make sure your system meet the [Minimum Requirement](http://google.com) before installing the RSK nodes on it.  
 
 ## Install RSK node via Ubuntu Package
 
-
 The easiest way to install and run a RSK node on Ubuntu is to do it through Ubuntu Package. By default, the node connects to MainNet.  To change the network choice, follow the instructions on [Switching Networks](http://google.com). To change other configuration of the node, please refer to the instructions on [RSK Node Configuration](http://google.com).
-
 
 ### Install via PPA
 
