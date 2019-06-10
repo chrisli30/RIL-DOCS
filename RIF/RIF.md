@@ -44,13 +44,9 @@ A: We chose to continue building on top of RSK Smart because of its unique posit
 RSK is the first open-source smart contract platform secured by the Bitcoin Network that is:
 
 * Bitcoin Friendliness: Bitcoin was the first and, today, the most well-secured blockchain available.
-
 * Security: RSK blockchain is secured by merge-mining, which means that RSK can achieve the same security as Bitcoin in terms of double-spend prevention and settlement finality.
-
 * Scalability: RSK can scale up to 100 transactions per second without sacrificing decentralization.
-
 * Flexibility: Instant payments allow new use cases, such as retail-ready store payments and micro-credits.
-
 * RIF Labs implemented RIF OS Protocols on top of the solid ground that RSK Smart Contract Network has built.
 
 Q: What’s the difference between RIF token and RBTC?
