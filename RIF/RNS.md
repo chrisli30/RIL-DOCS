@@ -16,19 +16,19 @@ Currently over the World Wide Web, the Domain Name System (DNS) is responsible f
 
 RIF Name Service’s architecture is based on the Ethereum Name Service (ENS) described on [EIP-137](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-137.md). It is primarily divided in 4 components:
 
-REGISTRY
+**REGISTRY**
 
 The Registry contract provides a simple mapping between a domain and its Resolver. Everything related to a domain ownership is managed in this contract, including ownership transfer and sub-domain creation.
 
-RESOLVER
+**RESOLVER**
 
 Resolver contracts are responsible for the resolution of a resource name. A Resolver has many user-defined functions and each function enables a different resource type to be fetched on the same Node.
 
-REGISTRAR
+**REGISTRAR**
 
 The Registrar is responsible of RNS governance. In addition, it is responsible for registering the name of a domain for a user, and the only entity capable of updating the RNS Registry.
 
-DEED
+**DEED**
 
 In order to prevent unnecessary used storage due to unused domains or prevent name squatting, the domain owner should have incentives to forfeit their ownership of them. To achieve this, the domain owner locks tokens which will be refunded when the domain is released.
 
@@ -38,9 +38,9 @@ In order to prevent unnecessary used storage due to unused domains or prevent na
 
 There are two ways users can get a domain.
 
-The first is to opening an auction through the Registrar contract for the desired domain. For example, if “.rsk is the TLD and Alice wants to get the domain “alice.rsk”, she can open an auction to this domain, make a bid, and if it is the highest, she will become the new owner of “alice.rsk” domain.
+The first is to opening an auction through the Registrar contract for the desired domain. For example, if “.rsk is the TLD and Alice wants to get the domain *“alice.rsk”*, she can open an auction to this domain, make a bid, and if it is the highest, she will become the new owner of *“alice.rsk”* domain.
 
-The second way is, if Bob is the owner of “bob.rsk” and Alice wants the subdomain “subdomain.bob.rsk”, Bob can delegate the subdomain ownership to Alice without an auction process.
+The second way is, if Bob is the owner of *“bob.rsk”* and Alice wants the subdomain *“subdomain.bob.rsk”*, Bob can delegate the subdomain ownership to Alice without an auction process.
 
 Once Alice gets a domain, she should set on the domain’s entry in the Registry contract the Resolver that will perform the resolution between the new domain and the desired resource. If a user doesn’t set a Resolver, a default one is set. This Public Resolver is the new owned domain’s parent’s Resolver.
 
