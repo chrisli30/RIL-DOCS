@@ -21,9 +21,9 @@ Following the instructions below you will install and run the RSK node in Azure.
      iii. Settings: configure optional features.
 
      iv. Summary: review the summary of what you have set and press Create.
->
+
 Wait for Azure to finish the deployment.
-4. Initialize RSK node configuration file settings (you can do it while [switching network](https://github.com/rsksmart/rskj/wiki/install-rskj-using-azure#Switching-networks)).<br/>
+4. Initialize RSK node configuration file settings (you can do it while [switching network](https://github.com/rsksmart/rskj/wiki/install-rskj-using-azure#Switching-networks)).
     i.[Connect your computer to the node using bash](#connect) .
       ii. Edit configuration file using vi:
 
@@ -43,9 +43,7 @@ Wait for Azure to finish the deployment.
 
 #### <div id="rpc">Enable RPC calls</div>
 1. Enable 4444 port. That is the default RSK port for RPC calls.
-<br>
 Navigate to the virtual machine where you are runing RSK. Go to networking configuration.
-
   <div><img width="100%" src="https://files.readme.io/21862c4-azure-networking.png"/></div>
 Add an inbound port rule with the following options:
 <div><img width="100%" src="https://files.readme.io/2b7a894-azure-security-rule.png"/></div>
@@ -78,9 +76,8 @@ Then press ```ESC```  to exit insertion and ```:wq``` to write changes and quit 
 sudo service rsk start
 ```
 
->If needed, change ```cors``` value.
+If needed, change ```cors``` value.
 
-<br>
 
 4. Test your connection.
 
@@ -106,13 +103,3 @@ To get user and server navigate to RSK virtual machine and go to the Overview wi
 Copy and paste the text in Ḷogin using VM local account in the console 
 
 <div><img width="100%" src="https://files.readme.io/3d09a04-azure-logssh.png"/></div>
-
-
-
-
-
-
-  
-
-
-

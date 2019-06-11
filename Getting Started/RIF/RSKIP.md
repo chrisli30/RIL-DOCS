@@ -28,9 +28,9 @@ The RSK roadmap has been established by the RSK community. During the first year
 * **DApp** - Dapp application interfaces
 
 #### Implementation Complexity
-* **1** - Minimal
-* **2** - Medium
-* **3** - High
+1. Minimal
+2. Medium
+3. High
 
 #### Here is a list of some recent key proposals as of June 2019:
 
