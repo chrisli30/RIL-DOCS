@@ -44,7 +44,7 @@ Usage:
 
 #### **get_dev_coins [RIF or RBTC]**
 >Quickly get rBTC or RIF testnet funds from faucets. 
-( Only works if you are connected to RSK-Testnet. }
+( Only works if you are connected to RSK-Testnet. )
 
 Usage: 
 * get_dev_coins RIF MyWallet1 Account1
