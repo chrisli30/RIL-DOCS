@@ -12,12 +12,12 @@ For most situations, it is recommended that you use a default provider.
 
 **.getDefaultProvider ([network =** *"homestead"* **]) => Provider**
 >This creates a FallbackProvider backed by multiple backends.
-
+>
 >This is the **recommended** method of connecting to the network if you are not running your own RSK node.
 
 **new providers.JsonRpcProvider([ urlOrInfo =** *"http://localhost:8545"* **][ ,network ])**
 >Connect to the JSON-RPC API URL urlorInfo of an RSK node
-
+>
 >The urlOrInfo may also be specified as an object with the properties:
 
  * **url** — the JSON-RPC URL (required).
@@ -49,11 +49,11 @@ For most situations, it is recommended that you use a default provider.
 
 *prototype* . **connection**
 >An object describing the connection of the JSON-RPC endpoint with the properties:
-
-* **url** — the JSON-RPC URL
-* **user** — a username to use for Basic Authentication (optional)
-* **password** — a password to use for Basic Authentication (optional)
-* **allowInsecure** — allows Basic Authentication over an insecure HTTP network
+>
+>* **url** — the JSON-RPC URL
+>* **user** — a username to use for Basic Authentication (optional)
+>* **password** — a password to use for Basic Authentication (optional)
+>* **allowInsecure** — allows Basic Authentication over an insecure HTTP network
 
 
 

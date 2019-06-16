@@ -2,6 +2,8 @@
 
 The Middle Layer provides API Interpreter for all typical actions, including transactions, smart contract operations, sign/verify messages, as well as common utilities. The Middle Layer sends request to base layer for verification and signing.
 
+
+
 ## Contract Operations
 
 A Contract is an abstraction of an executable program on the RSK Blockchain. A Contract has code (called byte code) as well as allocated long-term memory (called storage). Every deployed Contract has an address, which is used to connect to it so that it may be sent messages to call its methods.
@@ -11,6 +13,8 @@ A Contract can emit Events, which can be efficiently observed by applications to
 The Contract API provides simple way to connect to a Contract and call its methods, as functions on a JavaScript object, handling all the binary protocol conversion, internal name mangling and topic construction. This allows a Contract object to be used like any standard JavaScript object, without having to worry about the low-level details of the  Virtual Machine or Blockchain.
 
 The Contract object is a meta-class, which is a class that defines a Class at run-time. The Contract definition (called an Application Binary Interface, or ABI) can be provided and the available methods and events will be dynamically added to the object.
+
+
 
 #### Deploying a Contract
 
@@ -46,6 +50,8 @@ new . **ContractFactory ( abi , bytecode [ , signer ] )**
 *prototype* . **getDeployTransaction ( … )**   =>   UnsignedTransaction
 >Returns the transaction required to deploy the Contract with the provided constructor arguments. This is often useful for signing offline transactions or analysis tools.
 
+
+
 #### Connecting to Existing Contracts
 
 Once a Contract has been deployed, it can be connected to using the Contract object.
@@ -72,6 +78,8 @@ Additional properties will be added to the prototype at run-time, based on the A
 *prototype* . **deployed ( )**   =>   Promise<Contract>
 >If the contract is the result of <span style="color:red;">deploy()</span>, returns a Promise that resolves to the contract once it has been mined, or rejects if the contract failed to deploy. If the contract has been deployed already, this will return a Promise that resolves once the on-chain code has been confirmed.
 
+
+
 #### Meta-Class Properties
 
 Since a Contract is dynamic and loaded at run-time, many of the properties that will exist on a Contract are determined at run-time from the Contract ABI.
@@ -92,6 +100,8 @@ Filters allow for a flexible and efficient way to fetch only a subset of the eve
 
 *prototype* . **filters . eventname**
 >A function that generates filters that can be listened to, using the <span style="color:red;">on(eventName, ...)</span> function, filtered by the Event values.
+
+
 
 #### Event Emitter
 
@@ -145,6 +155,8 @@ All event callbacks receive the parameters specified in the ABI as well as one a
 >De-registers the specific *callback* for *eventName*. Returns the contract, so calls may be chained.
 
 
+
+
 ## Utilities
 
 The utility functions provide a large assortment of common utility functions required to write dapps, process user input and format data.
@@ -158,6 +170,44 @@ There are several formats available to represent RSK addresses and various ways 
 
 *utils* . **getContractAddress ( transaction )**   =>   Address
 >Computes the contract address of a contract deployed by *transaction*. The only properties used are *from* and *nonce*.
+
+
+#### Arrish
+An arrayish object is used to describe binary data and has the following conditions met:
+
+* has a length property
+* has a value for each index from 0 up to (but excluding) length
+* has a valid byte for each value; a byte is an integer in the range [0, 255]
+* is not a string
+
+*utils* . **isArrayish ( object )**   =>   boolean
+>Returns true if object can be treated as an arrayish object.
+
+*utils* . **arrayify ( hexStringOrBigNumberOrArrayish )**   =>   Uint8Array
+>Returns a Uint8Array of a hex string, BigNumber or of an Arrayish object.
+
+*utils* . **concat ( arrayOfHexStringsAndArrayish )**   =>   Uint8Array
+>Return a Uint8Array of all arrayOfHexStringsAndArrayish concatenated.
+
+*utils* . **padZeros ( typedUint8Array, length )**  =>   Uint8Array
+>Return a Uint8Array of typedUint8Array with zeros prepended to length bytes.
+
+*utils* . **stripZeros ( hexStringOrArrayish )**   =>   Uint8Array
+>Returns a Uint8Array with all leading zero bytes striped.
+
+
+
+#### Bytes32 Strings
+Often for short strings, it is far more efficient to store them as a fixed, null-terminated bytes32, instead of a dynamic length-prefixed bytes.
+
+*utils* . **formatBytes32String ( text )**   =>   hex
+>Returns a hex string representation of text, exactly 32 bytes wide. Strings >must be 31 bytes or shorter, or an exception is thrown.
+
+>NOTE: Keep in mind that UTF-8 characters outside the ASCII range can be multiple bytes long.
+
+*utils* . **parseBytes32String ( hexStringOrArrayish )**   =>   string
+>Returns hexStringOrArrayish as the original string, as generated by formatBytes32String.
+
 
 #### Big Numbers
 
@@ -237,3 +287,60 @@ BigNumber | any other BigNumber | returns the same instance
 
 *utils* . **verifyMessage ( messageStringOrArrayish , signature )**   =>   Addresss
 >Returns the address of the account that signed *messageStringOrArrayish* to generate signature.
+
+
+
+#### Hex Strings
+A hex string is always prefixed with “0x” and consists of the characters 0 – 9 and a – f. It is always returned lower case with even-length, but any hex string passed into a function may be any case and may be odd-length.
+
+*utils* . **hexlify ( numberOrBigNumberOrHexStringOrArrayish ) **  =>   hex
+>Converts any number, BigNumber, hex string or Arrayish to a hex string. (otherwise, throws an error)
+
+*utils* . **isHexString ( value ) **  =>   boolean
+>Returns true if value is a valid hexstring.
+
+*utils* . **hexDataLength ( hexString )**   =>   number
+>Returns the length (in bytes) of hexString if it is a valid data hexstring (even length).
+
+*utils* . **hexDataSlice ( hexString , offset [ , endOffset ] )**   =>   hex
+>Returns a string for the subdata of hexString from offset bytes (each byte is two nibbled) to endOffset bytes. If no endOffset is specified, the result is to the end of the hexString is used. Each byte is two nibbles.
+
+*utils* . **hexStripZeros ( hexString ) **  =>   hex
+>Returns hexString with all leading zeros removed, but retaining at least one nibble, even if zero (e.g. 0x0). This may return an odd-length string.
+
+*utils* . **hexZeroPad ( hexString , length )**   =>   hex
+>Returns hexString padded (on the left) with zeros to length bytes (each byte is two nibbles).
+
+
+#### Transactions
+
+*utils* . **serializeTransaction ( transaction [ , signature ] )**   =>   hex
+>Serialize transaction as a hex-string, optionally including the signature.
+
+>If signature is provided, it may be either the Flat Format or the Expanded >Format, and the serialized transaction will be a signed transaction.
+
+*utils* . **parseTransaction ( rawTransaction ) **  =>   Transaction
+>Parse the serialized transaction, returning an object with the properties:
+>
+> * to
+> * nonce
+> * gasPrice
+> * gasLimit
+> * data
+> * value
+> * chainId
+>
+>If the transactions is signed, addition properties will be present:
+>
+> * r, s and v — the signature public point and recoveryParam (adjusted for the chainId)
+> * from — the address of the account that signed the transaction
+> * hash — the transaction hash
+
+
+
+#### UTF-8 Strings
+*utils* . **toUtf8Bytes ( string ) **  =>   Uint8Array
+>Converts a UTF-8 string to a Uint8Array.
+
+*utils* . **toUtf8String ( hexStringOrArrayish , [ ignoreErrors = false ) **  =>   string
+>Converts a hex-encoded string or array to its UTF-8 representation.
