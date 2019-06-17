@@ -31,6 +31,7 @@ The RSK Key Management base layer consists of a secure environment with the prot
 It will extend itself in the future to support multiple hardware wallets used for a single multisignature keyset, for example the creation of 2of3 multisig keysets using 3 ledger wallets. 
 
 It will also extend itself in the future to support key derivation for various RSK/RIF services offered, including Single Sign-on, RNS, Encryption & Private communication and so on.
+
 #### RSK Key Management Mid Layer Architecture
 <div><img width="100%" src="https://files.readme.io/a6d3214-3.png"/></div>
 The RSK Key Management Mid Layer role in key management is to be the gatekeeper of knowledge and interaction with the Base Layer for processing requests, events and actions that require signature verification, signing, transaction, smart contract operation, along with requesting  storage, importing, and recovery of keys. It also provides modules for ABI (Application Binary Interface) Coding for working with smart contracts, along with Utilities which allow for a range of common functions required for dapps, processing input from users and formatting data.
@@ -38,7 +39,7 @@ The RSK Key Management Mid Layer role in key management is to be the gatekeeper 
 
 The API Interpreter provides an interface between the Base and Top Layers to communicate requests and return their outputs seamlessly, enabling top layer dapps, browsers and applications to interact with the processes. 
 
-* ###### Wallet Processes & Mid Layer API’s
+* **Wallet Processes & Mid Layer API’s**
     * New Wallet
         * Import
             * fromEncryptedJson
@@ -48,7 +49,7 @@ The API Interpreter provides an interface between the Base and Top Layers to com
     * Connect (provider)
     * getBalance
 
-* ###### Transactions
+*  **Transactions**
     * getTransactionCount
     * estimateGas
     * sendTransaction
@@ -75,7 +76,7 @@ The API Interpreter provides an interface between the Base and Top Layers to com
         * ComputeSharedSecret
             * Compute ECDH shared secret from the keys pKey and publicOrPrivateKey (good practice: hash this value before using it as a key)
 
-###### Contract Operators
+ **Contract Operators**
 
 * Create & Deploy a Contract
 * Connect to Existing Contracts
@@ -87,7 +88,7 @@ The API Interpreter provides an interface between the Base and Top Layers to com
 * Filtering Events
 * Application Binary Interface (ABI)
 
-###### Utilities
+**Utilities**
 * Addresses
 * Arrayish
 * Big Numbers
@@ -100,8 +101,7 @@ The API Interpreter provides an interface between the Base and Top Layers to com
 * UTF-8 Strings
 * Transactions: Serialize a transaction & Parse a serialized transaction
 
-
-###### ABI Coder
+**ABI Coder**
 * Create ABI Coder & Interface 
     * encode & decode 
 * Interface (abi)
@@ -112,7 +112,7 @@ The API Interpreter provides an interface between the Base and Top Layers to com
 * Functions 
     * An object of all the functions available in the ABI
 
-###### RSK Key Management Top Layer Architecture
+**RSK Key Management Top Layer Architecture**
 
 <div><img width="100%" src="https://files.readme.io/632fe47-4.png"/></div>
 
