@@ -1,6 +1,6 @@
-## RIF Name Service
+<div align="center"><img width="40%" src="https://www.rifos.org/wp-content/uploads/2019/04/yr0BKOXI.png" alt="overview of name service"/></div>
 
-<div align="center"><img width="100%" src="https://www.rifos.org/wp-content/uploads/2019/04/yr0BKOXI.png" alt="overview of name service"/></div>
+## RIF Name Service
 
 #### Intro
 

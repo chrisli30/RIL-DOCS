@@ -1,6 +1,5 @@
 ## Security Model
 
-
 A sidechain is an independent blockchain whose native currency is pegged to the value of another blockchain currency automatically by using proofs of payment. There is a two-way peg when two currencies can be exchanged freely, automatically, and without incurring in a price negotiation. In RSK, the Smart Bitcoin (RBTC) is two-way pegged to the BTC.
 
 In practice, when BTC are exchanged for RBTC, no currency is “transferred” between blockchains in a single transaction. When a transfer occurs, some BTCs are locked in Bitcoin and the same amount of RBTC is unlocked in RSK. When RBTC needs to be converted back into BTC, the RBTC get locked again in RSK and the same amount of BTC are unlocked in Bitcoin.
