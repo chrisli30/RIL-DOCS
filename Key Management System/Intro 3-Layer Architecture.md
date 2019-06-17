@@ -122,61 +122,24 @@ The RSK Key Management Top Layer provides Account Management interfaces, API int
 * API Interfaces
     * Javascript Top level interfaces (Below are some starters, more TBD)
 
-<style>
-  table{
-    width:100%；
-  }
-  table th:nth-child(1){
-    width:33.3%;
-  }
-  table th:nth-child(2){
-    width:66.6%;
-  }
-  table tr td:nth-child(1){
-    width:33.3%;
-  }
-  table tr td:nth-child(2){
-    width:66.6%;
-  }
-</style>
+
 
 
 Function  | Description
 --------- |  ----------
 connect (provider-network) | Connect to an RSK node network
-
-Function  | Description
---------- |  ----------
 create_wallet | Create a wallet with a label & master encrypted passphrasechoose between using a hardware wallet, generating keystore file or a mnemonic phrase.<br/>Example:<br/>create_wallet MyWallet1_Label -pass (prompted to enter password)<br/>create_wallet MyWallet1_Label -mnemonic “.... ….”
-
-Function  | Description
---------- |  ----------
 set_wallet_label | Sets the local wallet label to a new label.<br/>Usage:<br/> set_wallet_label MyWallet1 My-Developer-Wallet
-import_wallet | Import existing wallet’s accounts as a new Wallet using a private key or encrypted JSON keystore<br/>Usage:<br/> import_wallet MyWallet1 -json mywallet1.json<br> NewEncryptedPass (prompted to enter the old encrypted password)recover_wallet_mnemonic | Recover a wallet using a mnemonic phrase
-
-Function  | Description
---------- |  ----------
+import_wallet | Import existing wallet’s accounts as a new Wallet using a private key or encrypted JSON keystore<br/>Usage:<br/> import_wallet MyWallet1 -json mywallet1.json<br> NewEncryptedPass (prompted to enter the old encrypted password)recover_wallet_mnemonic | Recover a wallet using a mnemonic phras
 create_new_account | Create_new_account MyWallet1 [label_new_account]<br>Output: New account created 0x……. with label Account1 for wallet MyWallet1
 export | Export the keyset for a wallet
-
-Function  | Description
---------- |  ----------
 get_dev_coins [RIF or RBTC] | Quickly get rBTC or RIF testnet funds from faucets. <br>( Only works if you are connected to RSK-Testnet. )<br>Usage: get_dev_coins RIF MyWallet1 Account1<br>Output: Account1 in MyWallet1 has received 100 RIF tokens 
-
-Function  | Description
---------- |  ----------
 contract_create | Creates a new contract instance with all methods and events defined in the interface <br>Usage: contract_create(Interface, address, options)
 contract_method | Create a transaction object for a method that can be called, sent, estimated
 ttcontract_event_subscribe_once | Subscribes to an event only once
-
-Function  | Description
---------- |  ----------
 contract_event_subscribe | Subscribes to an event
 contract_allevents | Receives all events from this smart contract, or filter events.
 contract_pastevents | Gets past events for this contract.
-
-Function  | Description
---------- |  ----------
 view_accounts | Show accounts for existing wallet using a variety of methods [ hardware, web3, private key, keystore, mnemonic]<br>Usage: view_accounts MyWallet1 <encrypted_passphrase>
 get_balance | Get balance of accounts in a wallet, or specify a specific account <br>Usage: get_balance MyWallet1  OR   get_balance MyWallet1 0xAccountInfo
 pay, payment | to, amount, account from, fee
