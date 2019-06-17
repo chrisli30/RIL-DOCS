@@ -20,3 +20,4 @@ The RSK Key Management System library is built with a 3 layer architecture.
 * The Middle Layer provides API Interpreter for all typical actions, including transactions, smart contract operations, sign/verify messages, as well as common utilities. The Middle Layer sends request to base layer for verification and signing.
 * The Top Layer provides API Interfaces to popular programming languages (JS, Python, etc) and also connects to provider handlers.
 
+#### pic
