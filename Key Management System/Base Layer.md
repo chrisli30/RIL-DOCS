@@ -2,8 +2,6 @@
 
 The Base Layer enableds wallet(private keys) to be stored in secure enclave and hardware device. It also provides ways to store, protect, access and recovery wallets.
 
-
-
 ## Wallet API
 A Wallet manages a private/public key pair which is used to cryptographically sign transactions and prove ownership on the blockchain.
 

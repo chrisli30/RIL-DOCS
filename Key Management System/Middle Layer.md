@@ -3,7 +3,6 @@
 The Middle Layer provides API Interpreter for all typical actions, including transactions, smart contract operations, sign/verify messages, as well as common utilities. The Middle Layer sends request to base layer for verification and signing.
 
 
-
 ## Contract Operations
 
 A Contract is an abstraction of an executable program on the RSK Blockchain. A Contract has code (called byte code) as well as allocated long-term memory (called storage). Every deployed Contract has an address, which is used to connect to it so that it may be sent messages to call its methods.
@@ -335,7 +334,6 @@ A hex string is always prefixed with “0x” and consists of the characters 0 �
 > * r, s and v — the signature public point and recoveryParam (adjusted for the chainId)
 > * from — the address of the account that signed the transaction
 > * hash — the transaction hash
-
 
 
 #### UTF-8 Strings
