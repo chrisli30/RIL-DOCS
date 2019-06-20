@@ -466,18 +466,12 @@ class MissionSection extends React.Component {
             <div className="ready-to-build-title">
               Ready to start building?
             </div>
-            <Link to="/" className="ready-to-build-item">
-              Download and set up a node
-            </Link>
-            <Link to="/" className="ready-to-build-item">
-              Download and set up a wallet
-            </Link>
-            <Link to="/" className="ready-to-build-item">
-              Register your domain name using RIF tokens
-            </Link>
-            <Link to="/" className="ready-to-build-item">
-              Detailed documentation
-            </Link>
+            <div className="header-btn-box">
+              <a href="https://rsk-dev.readme.io/docs/set-up-a-node" target="_self" className="btn-light btn-header">NODE SETUP</a>
+              <a href="https://rsk-dev.readme.io/docs/connect-rsk-with-wallet" target="_self" className="btn-light btn-header">WALLET SETUP</a>
+              <a href="https://rsk-dev.readme.io/docs/rns" target="_self" className="btn-light btn-header">DOMAIN REGISTER</a>
+              <a href="https://rsk-dev.readme.io/" target="_self" className="btn-light btn-header">FULL DOCUMENTATION</a>
+            </div>
           </div>
           <div className="section-lastest-blog">
             <div className="lastest-blog-title">LATEST NEWS FROM BLOG</div>
