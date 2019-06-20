@@ -117,7 +117,7 @@ export const artistList = [
   'Developer friendly',
   'Enterprise-grade security',
   'Fast and scalable ',
-  'Built on Bitcoin, powered by Smart Contracts.',
+  'Built on Bitcoin, powered by Smart Contracts',
   'Core apps and infrastructure marketplace',
 ];
 export const artistDetailList = [
