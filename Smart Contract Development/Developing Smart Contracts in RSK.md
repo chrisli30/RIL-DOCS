@@ -1,7 +1,7 @@
 ## Developing Smart Contracts in RSK
 
 
-#### 1.Preparing the environment
+#### 1.Prepare the environment
 * [Install solidity compile from this link](https://solidity.readthedocs.io/en/develop/#available-solidity-integrations).
 
 * [Installing the truffle and ganache here](https://www.trufflesuite.com/).
@@ -13,14 +13,14 @@
 #### 2. Introduce usage of the truffle
 Truffle is a development environment, testing framework and asset pipeline for blockchains. In this step we are going to learn the basics.
 
-Using Truffle, we can compile Solidity Smart Contracts, deploy them to a blockchain using JavaScript, create a JavaScript test suite and interact with the contract through the integrated console.
+Using Truffle, we can compile Solidity Smart Contracts, deploy them to a blockchain using JavaScript, create a JavaScript test suite and interact with the contracts through the integrated console.
 
 ```
 truffle init # Creates an empty truffle project
 truffle unbox package # Clones an existing Truffle packaged project
 truffle develop # Starts truffle in-memory blockchain
 truffle compile # Compiles Smart Contracts
-truffle migrate # Deployes Smart Contracts to the configured blockchain
+truffle migrate # Deploys Smart Contracts to the configured blockchain
 truffle console # Starts a web3 console
 ```
 
@@ -33,7 +33,7 @@ mkdir simple-storage
 cd simple-storage
 truffle init
 ```
-* initialize a Truffle project.
+* Initialize a Truffle project.
 ```shell
 truffle init
 ```
@@ -60,28 +60,28 @@ Then you can see the file structure like this:
 │   └── 1_initial_migration.js
 ├── test
 └── truffle-config.js
-This is shown in my editor：
+This is shown in my editor:
 <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/36d06eb-truffle-1.png"></div> 
 
-* **./contracts:** all our smart contracts will be stored on this folder.
+* **./contracts:** All our smart contracts will be stored in this folder.
 
-* **./migrations:** deployment scripts will be stored on this folder.
+* **./migrations:** Deployment scripts will be stored in this folder.
 
-* **./test:** test scripts will be stored on this folder.
+* **./test:** Test scripts will be stored in this folder.
 
-* **./truffle-config:** this is Truffle’s configuration file. We’ll be able to configure networks to interact with here.
-
-
+* **./truffle-config:** This is Truffle’s configuration file. We’ll be able to configure networks to interact with here.
 
 
-#### 4. Run a blockchain locally.
+
+
+#### 4. Run a blockchain locally
 
 ```shell
 truffle develop
 ```
 
 
-You can see a list of available accounts that are already created and ready to use and also you can see the port where the blockchain is running (it is 9545). This is an in-memory blockchain, this means that no other peers are going to connect and interact with it automatically. It's just for testing purposes.
+You can see a list of available accounts that are already created and ready to use; you can also see the port (9545) where the blockchain is running. This is an in-memory blockchain, which means that no other peers are going to connect and interact with it automatically. It's just for testing purposes.
 
 ```shell
 Truffle Develop started at http://127.0.0.1:9545/
@@ -130,11 +130,11 @@ In Truffle development console execute this command to scaffold a new contract:
 truffle(develop)> create contract SimpleStorage
 ```
 
-Now, you can see the new SimpleStorage.sol file in contracts folder:
+Now, you can see the new SimpleStorage.sol file in the contracts folder:
 
 <div style="text-align:center"><img width="auto" style="margin:0 auto" src="https://files.readme.io/d1d815f-truffle-4.png"></div> 
 
-In this file, we are going to coding these lines;
+In this file, we are going to code these lines:
 ```java
 pragma solidity ^0.5.0;
 
@@ -159,12 +159,12 @@ contract SimpleStorage {
 
 #### 6. Deploy it to the blockchain
 
-Now, we must include the contract in the deployment scripts. This scripts are found in migrations folder.
+Now, we must include the contract in the deployment scripts. These scripts are found in the Migrations folder.
 
 Then we create a new migration file. We can name it 2_simple_storage.js. 
 
 
-We write these codes like below:
+We write these codes as below:
 
 ```js
 var SimpleStorage = artifacts.require("./SimpleStorage.sol");
@@ -174,9 +174,9 @@ module.exports = function(deployer) {
 };
 ```
 
-This deployment JavaScript files are run to deploy contracts once they are compiled.
+These deployment JavaScript files are run to deploy contracts once they are compiled.
 
-We must compile the contracts. In the Truffle console, run this command:
+To compile the contracts, in the Truffle console, run this command:
 
 ```shell
 truffle(develop)> compile
@@ -191,7 +191,7 @@ truffle(develop)> compile
 truffle(develop)> 
 ```
 
-Solidity compiler compiles all .sol files in contracts folder in the project. This compilation is saved in .json files in build folder. Have a look at this file, we can find a field call bytecode. This bytecode is the data that will be stored in the blockchain and it's the contract program.
+Solidity compiler compiles all .sol files in the contracts folder in the project. This compilation is saved in .json files in the build folder. Have a look at this file. We can find a field called bytecode. This bytecode is the data that will be stored in the blockchain and it's the contract program.
 
 Finally, we are going to deploy our contracts to our local network:
 
@@ -243,13 +243,13 @@ Now, our smart contract is in the blockchain!
 
 
 
-#### 7.Interacting with smart contracts
+#### 7.Interact with smart contracts
 
-The Truffle console is a basic JavaScript pipeline that implements most blockchain simple development functionalities.
+The Truffle console is a basic JavaScript pipeline that implements most  simple blockchain development functionalities.
 
 Let's get an instance of our contract! In migrations, we defined a name for our contract instance: **SimpleStorage**. This name is the one declared in Migrations. We are going to get this instance and interact with it.
 
-1.Get an instance of the SimpleStorage contract
+1. Get an instance of the SimpleStorage contract.
 
 ```shell
 truffle(develop)> var SimpleStorage
@@ -257,9 +257,9 @@ undefined
 truffle(develop)> SimpleStorage.deployed().then(instance => simpleStorage = instance)
 ```
 
-Now simpleStorage variable contains an instance to the previously deployed contract：
+Now simpleStorage variable contains an instance of the previously deployed contract:
 
-2. Call get() method to get the storage in the contract
+2. Call get() method to get the storage in the contract.
 ```shell
 truffle(development)> simpleStorage.get()
 truffle(develop)> simpleStorage.get()
@@ -275,7 +275,7 @@ This method does not modify the storage of the contract, so no funds are spent c
 truffle(develop)> simpleStorage.set(10)
 ```
 
-Have a look at the response
+Have a look at the response.
 
 ```js
 truffle(develop)> simpleStorage.set(10)
@@ -307,18 +307,18 @@ truffle(develop)> simpleStorage.set(10)
 
 ```
 
-The transaction generated a receipt. This is the answer the blockchain generates to a transaction.
+The transaction generates a receipt. This is the answer the blockchain generates to a transaction.
 
-4. To check that it was executed, we can run step 2. and see that the storage changed.
+4. To confirm that it was executed, we can run Step 2 again and see that the storage has changed.
 
-#### 8.Smart contract on RSK
+#### 8. Smart contract on RSK
 
 * Get an RSK account
-  * To create our wallet we are going to use this web app: https://iancoleman.io/bip39/. **This may not be used for any 'real' wallet, it's not a secure way to generate a private key!.** We are going to use it just for learning the basics.
+  * To create our wallet we are going to use this web app: https://iancoleman.io/bip39/. **This may not be used for any 'real' wallet; it's not a secure way to generate a private key!** We are going to use it just for learning the basics.
 
     > 1. In the 'Generate a random mnemonic' field, we select 12 words and generate it. 
-    > 2. Then tap in 'Generate'. 
-    > 3. The result appears in BIP39 mnemonic field, they should be 12 random words like the words in the image:
+    > 2. Then tap on 'Generate'. 
+    > 3. The result appears in the BIP39 Mnemonic field. They should be 12 random words like the words in the image:
 <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/3670eb8-truffle-12.png"></div> 
 
 * Connect Truffle to RSK public node
@@ -356,7 +356,7 @@ module.exports = {
 }
 ```
 
-What we are doing is telling truffle to connect to RSK public node, having control of your recently created account. gasPrice is the price we pay for fees to the network, gas is the maximum gas we allow to spend on a transaction. The values are defaults used for RSK network. If we set this values wrongly, transactions may not be mined or waste too much funds.
+What we are doing is telling truffle to connect to RSK public node, and having control of your recently created account. "GasPrice" is the price we pay for fees to the network, and "gas" is the maximum gas we allow to spend on a transaction. The values are default used for RSK network. If we set these values wrongly, transactions may not be mined or waste too many funds.
 
 To check our connection let's open a Truffle console:
 
@@ -381,7 +381,7 @@ What is our address? Let's type this in our console to know what address was unl
 truffle(rsk)> web3.currentProvider.wallets
 ```
 
-output:
+Output:
 ```js
 { '0xf08f6c2eac2183dfc0a5910c58c186496f32498d':
    p {
@@ -391,7 +391,7 @@ output:
       <Buffer f0 b5 45 f3 9e 4e 4b 5b b0 fd 54 c5 dc cb d6 74 fc 9b 2f 5e d7 e1 50 3e 00 8a d3 d8 f5 95 83 cf 02 cf 11 25 c7 21 1b 56 2a fa 63 62 5a 9e 8f 7d 42 ef ... > } }
 ```
 
-Using the previously mentioned configuration, just one wallet should be available. Let's save it in a variable in our console. We are going to use it soon.
+The previously mentioned configuration having been used, only one wallet should be available. Let's save it in a variable in our console. We are going to use it soon.
 
 ```shell
 truffle(rsk)> var account = Object.keys(web3.currentProvider.wallets)[0]
@@ -400,18 +400,18 @@ truffle(rsk)> account
 '0xf08f6c2eac2183dfc0a5910c58c186496f32498d'
 ```
 
-We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds to use for testing. Let's go to RSK Faucet: https://faucet.testnet.rsk.co.
+We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: https://faucet.testnet.rsk.co.
 
 
 <div style="text-align:centeDr"><img style="margin:0 auto" src="https://files.readme.io/7d28c33-get-balance-faucet.png"></div> 
 
-steps of usage:
+Steps of usage:
 > 1. Enter the address we got earlier 
 > 2. Enter the Enter check code 
 > 3. Submit form
 <div style="text-align:centeDr"><img style="margin:0 auto" src="https://files.readme.io/34161e4-get-balance-faucet2.png"></div> 
 
-Congratulations, you got the balance for testing.
+Congratulations, you get the balance for testing.
 <div style="text-align:centeDr"><img style="margin:0 auto" src="https://files.readme.io/27e29ce-get-balance-from-faucet.png"></div> 
 
 Now, let's check our balance in the console:
@@ -437,7 +437,7 @@ Compiling your contracts...
 > Compiled successfully using:
    - solc: 0.5.0+commit.1d4f565a.Emscripten.clang
 ```
-> Note, please make sure the build folder is clean.If not, the following will be output and the file will not be compiled:
+> Note: Please make sure the build folder is clean. If not, the following will be output and the file will not be compiled:
 
 ```shell
 Compiling your contracts...
@@ -452,7 +452,7 @@ truffle(rsk)> migrate --reset
 
 Deployment may delay a little bit.
 
-If everything is ok, you will see the following output：
+If everything is ok, you will see the following output:
 
 ```js
 Compiling your contracts...
@@ -521,7 +521,7 @@ Summary
 > Final cost:          0.000000082449369 ETH
 ```
 
-Once the contract is deployed we can use the deployed() method as we did in the private blockchain. To see the interaction with the contract we can access to it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/). All interactions with our contract will appear in the explorer!
+Once the contract is deployed we can use the deployed() method as we did in the private blockchain. To see the interaction with the contract we can access it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/). All interactions with our contract will appear in the explorer!
 
 
 <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/21f88b0-check-on-explorer-1.png"></div> 
