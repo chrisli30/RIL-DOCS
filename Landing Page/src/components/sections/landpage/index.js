@@ -115,12 +115,13 @@ class MissionSection extends React.Component {
               </div>
             </div>
             <div className="header-btn-box">
-              <a href="https://rsk-dev.readme.io/" target="_self" className="btn-light btn-header">GET STARTED</a>
-              <a href="https://www.rsk.co/" target="_self" className="btn-default btn-header">RSK HOME</a>
+              <a href="https://rsk-dev.readme.io/docs/set-up-a-node" target="_self" className="btn-light btn-header">NODE SETUP</a>
+              <a href="https://rsk-dev.readme.io/docs/connect-rsk-with-wallet" target="_self" className="btn-default btn-header">WALLET SETUP</a>
+              <a href="https://rsk-dev.readme.io/docs/rns" target="_self" className="btn-default btn-header">DOMAIN REGISTER</a>
             </div>
           </div>
           <div className="sub-header">
-            <h4 className="light">DOCUMENTATIONS</h4>
+            <h4 className="light">DOCUMENTATION HIGHLIGHTS</h4>
             <div className="sub-header-container">{categoryListArea}</div>
           </div>
           <div className="des-data-box">
@@ -133,70 +134,61 @@ class MissionSection extends React.Component {
               >JOIN RSK COMMUNITY</h4>
               <div className="des-box">
                 <div className="des-box-item">
-                  <div className="box-of-icon__des">
-                    <svg className="icon-trophy des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
-                      <path
-                        fill="#000000"
-                        d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="des-item-title">
-                    <div>
+                  <a href="https://join.slack.com/t/rskis/shared_invite/enQtNjU5OTY4OTM0OTk0LTViNDc0YWIwMzlmNGQ3OTA4YmFhYzFjYmJiZDhiOGEzOGM3N2IwYWRlNDMwMzgyMDhkYjQ1MmNjNDc3Y2M4M2E" target="_blank">
+                    <div className="des-box-item-container">
+                      <div className="box-of-icon__des">
+                        <svg className="icon-trophy des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
+                          <path
+                            fill="#000000"
+                            d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
+                          />
+                        </svg>
+                      </div>
+                      <div className="des-item-title">
+                        <div>
                       SLACK
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="des-item-content">
-                    {/* <p>
-                      Lorem ipsum
-                      dolor sit ametcon sectetur adipisicing elit, sed doiusmod tempor incidi
-                      labore et dolore magna aliqua.
-                    </p> */}
-                  </div>
+                  </a>
                 </div>
                 <div className="des-box-item">
-                  <div className="box-of-icon__des">
-                    <svg className="icon-puzzle des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
-                      <path
-                        fill="#000000"
-                        d="M20.5,11H19V7C19,5.89 18.1,5 17,5H13V3.5A2.5,2.5 0 0,0 10.5,1A2.5,2.5 0 0,0 8,3.5V5H4A2,2 0 0,0 2,7V10.8H3.5C5,10.8 6.2,12 6.2,13.5C6.2,15 5,16.2 3.5,16.2H2V20A2,2 0 0,0 4,22H7.8V20.5C7.8,19 9,17.8 10.5,17.8C12,17.8 13.2,19 13.2,20.5V22H17A2,2 0 0,0 19,20V16H20.5A2.5,2.5 0 0,0 23,13.5A2.5,2.5 0 0,0 20.5,11Z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="des-item-title">
-                    <div>
+                  <a href="https://discord.gg/z9X5ey" target="_blank">
+                    <div className="des-box-item-container">
+                      <div className="box-of-icon__des">
+                        <svg className="icon-puzzle des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
+                          <path
+                            fill="#000000"
+                            d="M20.5,11H19V7C19,5.89 18.1,5 17,5H13V3.5A2.5,2.5 0 0,0 10.5,1A2.5,2.5 0 0,0 8,3.5V5H4A2,2 0 0,0 2,7V10.8H3.5C5,10.8 6.2,12 6.2,13.5C6.2,15 5,16.2 3.5,16.2H2V20A2,2 0 0,0 4,22H7.8V20.5C7.8,19 9,17.8 10.5,17.8C12,17.8 13.2,19 13.2,20.5V22H17A2,2 0 0,0 19,20V16H20.5A2.5,2.5 0 0,0 23,13.5A2.5,2.5 0 0,0 20.5,11Z"
+                          />
+                        </svg>
+                      </div>
+                      <div className="des-item-title">
+                        <div>
                       DISCORD
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="des-item-content">
-                    {/* <p>
-                      Lorem ipsum
-                      dolor sit ametcon sectetur adipisicing elit, sed doiusmod tempor incidi
-                      labore et dolore magna aliqua.
-                    </p> */}
-                  </div>
+                  </a>
                 </div>
                 <div className="des-box-item">
-                  <div className="box-of-icon__des">
-                    <svg className="icon-lightbulb des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
-                      <path
-                        fill="#000000"
-                        d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21A1,1 0 0,0 10,22H14A1,1 0 0,0 15,21V20H9V21Z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="des-item-title">
-                    <div>
+                  <a href="https://t.me/RSKDevgroup" target="_blank">
+                    <div className="des-box-item-container">
+                      <div className="box-of-icon__des">
+                        <svg className="icon-lightbulb des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
+                          <path
+                            fill="#000000"
+                            d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21A1,1 0 0,0 10,22H14A1,1 0 0,0 15,21V20H9V21Z"
+                          />
+                        </svg>
+                      </div>
+                      <div className="des-item-title">
+                        <div>
                       TELEGRAM
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="des-item-content">
-                    {/* <p>
-                      Lorem ipsum
-                      dolor sit ametcon sectetur adipisicing elit, sed doiusmod tempor incidi
-                      labore et dolore magna aliqua.
-                    </p> */}
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
