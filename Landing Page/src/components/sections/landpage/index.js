@@ -103,8 +103,8 @@ class MissionSection extends React.Component {
         <div className="inner-page">
           <div className="header">
             <div className="header-content">
-              <h1 className="light" style={{ paddingBottom: '18px' }}>RSK + RIFOS for developers</h1>
-              <h1 className="light">Build the next big thing</h1>
+              <h1 className="light" >RSK + RIFOS for developers</h1>
+              <h1 className="light padding-bottom" >Build the next big thing</h1>
               <div className="header-slogan">
                 <span>ON BITCOIN</span>
               </div>
