@@ -1,6 +1,6 @@
 ## RSK Tesnet Faucet
 
-RSK Testnet Faucet can provide you with small denomination RSK coins for Testnet after you input your wallet address and pass the CAPTCHA.
+RSK [Testne Faucet](https://faucet.testnet.rsk.co/) can provide you with small denomination RSK coins for Testnet after you input your wallet address and pass the CAPTCHA.
 
 <div align="center"><img width="100%" src="https://files.readme.io/7b24aa4-_20190605160100.png" alt="overview of faucet"/></div>
 
