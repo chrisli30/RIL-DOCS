@@ -66,6 +66,10 @@ const librariesToolsList = [
     link: 'https://rsk-dev.readme.io/docs/rsk-explorer',
   },
   {
+    name: 'RSK Stats',
+    link: 'https://stats.rsk.co/',
+  },
+  {
     name: 'Testnet Faucet',
     link: 'https://rsk-dev.readme.io/docs/testnet-faucet',
   },
