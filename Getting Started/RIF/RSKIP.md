@@ -3,7 +3,7 @@
 
 The RSK roadmap has been established by the RSK community. During the first years of RSK development, RSK Labs had an active role building the reference implementation. After RSK was launched, RSK Labs continued to be highly involved with the community by improving the codebase and proposing improvements through the RSKIP proposal repository system. The repository helps the community members to coordinate discussions, rejection, acceptance and deployment over multiple codebases. The amount of improvement proposals is vast. 
 
-[For more reference](https://github.com/rsksmart/RSKIPs)
+For more details please reference [RSKIP Github](https://github.com/rsksmart/RSKIPs)
 
 
 #### RSKIP status terms
