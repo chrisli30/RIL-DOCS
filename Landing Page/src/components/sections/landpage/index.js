@@ -438,12 +438,12 @@ class MissionSection extends React.Component {
             </div>
           </div>
 
-          <div className="section-core-competence">
+          <div className="section-core-competence" id="coreCompetenceSection">
             <div className="core-competence-title">WHY YOU SHOULD BUILD ON RSK+RIFOS</div>
             <div className="core-competence-slogan">
               {
                 artistList.map((ele, idx) => (
-                  <div key={`core-competence-item-${ele}`} onClick={() => { this.setState({ artistIdx: idx }); }} className="core-competence-slogan-item">
+                  <div key={`core-competence-item-${ele}`} onClick={() => { this.setState({ artistIdx: idx }); }} className={`core-competence-slogan-item ${artistIdx === idx ? 'slogan-actived' : ''} `}>
                     {
                       artistIconArray[idx]
                     }
@@ -455,6 +455,7 @@ class MissionSection extends React.Component {
               }
             </div>
             <div className="core-competence-content">
+              <h2 className="core-competence-content-item-title">{artistList[artistIdx]}</h2>
               <p className="core-competence-content-item">
                 {
                   artistDetailList[artistIdx]
