@@ -13,7 +13,7 @@ Visual Studio Code for Mac
 #### Install Plugin
 Markdown Preview Enhance
 
-安装好插件之后，Command + Shift + P 调出控制台，输入Markdown，你就会看到那个插件，然后选中 Markdown Preview Enhanced：Open Preview on the side 就可以实时看到自己改动的效果
+Once plugin installation completed, press Command + Shift + P to call Visual Studio Code command line, and type Markdown,and select "Markdown Preview Enhanced：Open Preview on the side" from the dropdown list of result. Then you will see Markdown preview on the right of the screen in real-time.
 
 ### Work Flow
 1. Branch off from master
