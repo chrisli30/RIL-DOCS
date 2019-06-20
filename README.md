@@ -15,6 +15,23 @@ Markdown Preview Enhance
 
 Once plugin installation completed, press Command + Shift + P to call Visual Studio Code command line, and type Markdown,and select "Markdown Preview Enhanced：Open Preview on the side" from the dropdown list of result. Then you will see Markdown preview on the right of the screen in real-time.
 
+#### Git subtree
+[Git subtree: the alternative to Git submodule](https://www.atlassian.com/blog/git/alternatives-to-git-submodule-git-subtree)
+1. Add a sub-folder
+`git subtree add --prefix <sub-folder-name> <remote-repository> <branch> --squash`
+
+2. Update the code of from the upstream repository do a git subtree pull:
+`git subtree pull --prefix <sub-folder-name> <remote-repository> <branch> --squash`
+
+3. Make code changes back upstream
+`git remote add <sub-folder-name> <remote-repository>`
+`git subtree push --prefix=.vim/bundle/tpope-vim-surround/ durdn-vim-surround master`
+
+
+- After this we’re ready and we can open a pull-request to the maintainer of the package.
+
+
+
 ### Work Flow
 1. Branch off from master
 Create a local branch and name it with the name of group of changes
