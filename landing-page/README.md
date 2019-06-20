@@ -16,7 +16,7 @@ Yarn
 1. To create an Optimized Product Build of the app, you need to run a build command in you terminal at app root.
   1. `yarn build`
   1. `yarn global add serve`
-  1. `nohup serve -l 5000 -s build &`
+  1. `nohup serve -l 5000 -s build &` 
 
 ## Deployment
 
