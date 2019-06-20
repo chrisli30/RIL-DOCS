@@ -120,7 +120,7 @@ class MissionSection extends React.Component {
             </div>
           </div>
           <div className="sub-header">
-            <h4 className="light">DOCUMENTATIONS</h4>
+            <h4 className="light sub-header-title">DOCUMENTATIONS</h4>
             <div className="sub-header-container">{categoryListArea}</div>
           </div>
           <div className="des-data-box">
@@ -446,12 +446,12 @@ class MissionSection extends React.Component {
             </div>
           </div>
 
-          <div className="section-core-competence">
+          <div className="section-core-competence" id="coreCompetenceSection">
             <div className="core-competence-title">WHY YOU SHOULD BUILD ON RSK+RIFOS</div>
             <div className="core-competence-slogan">
               {
                 artistList.map((ele, idx) => (
-                  <div key={`core-competence-item-${ele}`} onClick={() => { this.setState({ artistIdx: idx }); }} className="core-competence-slogan-item">
+                  <div key={`core-competence-item-${ele}`} onClick={() => { this.setState({ artistIdx: idx }); }} className={`core-competence-slogan-item ${artistIdx === idx ? 'slogan-actived' : ''} `}>
                     {
                       artistIconArray[idx]
                     }
@@ -463,6 +463,7 @@ class MissionSection extends React.Component {
               }
             </div>
             <div className="core-competence-content">
+              <h2 className="core-competence-content-item-title">{artistList[artistIdx]}</h2>
               <p className="core-competence-content-item">
                 {
                   artistDetailList[artistIdx]
@@ -474,18 +475,18 @@ class MissionSection extends React.Component {
             <div className="ready-to-build-title">
               Ready to start building?
             </div>
-            <Link to="/" className="ready-to-build-item">
+            <a href="https://rsk-dev.readme.io/docs/set-up-a-node" className="ready-to-build-item">
               Download and set up a node
-            </Link>
-            <Link to="/" className="ready-to-build-item">
+            </a>
+            <a href="https://rsk-dev.readme.io/docs/connect-rsk-with-wallet" className="ready-to-build-item">
               Download and set up a wallet
-            </Link>
-            <Link to="/" className="ready-to-build-item">
+            </a>
+            <a href="https://rsk-dev.readme.io/docs/rns" alt="Register your domain name" className="ready-to-build-item">
               Register your domain name using RIF tokens
-            </Link>
-            <Link to="/" className="ready-to-build-item">
+            </a>
+            <a href="https://rsk-dev.readme.io/docs" alt="Detailed documentation" className="ready-to-build-item">
               Detailed documentation
-            </Link>
+            </a>
           </div>
           <div className="section-lastest-blog">
             <div className="lastest-blog-title">LATEST NEWS FROM BLOG</div>

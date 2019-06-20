@@ -114,7 +114,7 @@ export const artistList = [
   'Enterprise-grade security',
   'Fast and scalable ',
   'Built on Bitcoin, powered by Smart Contracts.',
-  'Marketplace of core apps and infrastructure, powered by the RIF Token',
+  'Core apps and infrastructure marketplace',
 ];
 export const artistDetailList = [
   `RSK+RIFOS is fully compatible with Solidity, the most used Smart Contract (SC) programming language, and Web 3 standards. This means that any SC deployed in the Ethereum blockchain can
