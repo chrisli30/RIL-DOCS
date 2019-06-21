@@ -44,7 +44,7 @@ const categoryListArea = subListArray.map((item) => (
     <ul>
       {
         item.details.map((detail) => (
-          <li className key={`getting-start-list-${detail.name}`}><a href={detail.link}>{detail.name}</a></li>
+          <a href={detail.link}><li className key={`getting-start-list-${detail.name}`}><span>{detail.name}</span></li></a>
         ))
       }
     </ul>
@@ -428,10 +428,10 @@ class MissionSection extends React.Component {
           </div>
           <div className="hideOnMobile hideOnLarge section-middle-logo">
             <div className="middle-logo-title">
-              THE⬠GEM
+              RSK Dev Site
             </div>
             <div className="middle-logo-text">
-              Lorem ipsum dolor sit ametcon sectetur adipisicing elit
+              RSK Dev Site Description
             </div>
             <div className="middle-logo-btn-container">
               <a className="btn-middle-logo">great, i want buy now!</a>
@@ -439,7 +439,11 @@ class MissionSection extends React.Component {
           </div>
 
           <div className="section-core-competence" id="coreCompetenceSection">
+<<<<<<< HEAD
             <div className="core-competence-title">WHY YOU SHOULD BUILD ON RSK+RIFOS</div>
+=======
+            <div className="core-competence-title">WHY BUILD ON RSK+RIFOS</div>
+>>>>>>> 91b90e065305340570996d02780e442677b1846a
             <div className="core-competence-slogan">
               {
                 artistList.map((ele, idx) => (
@@ -560,7 +564,7 @@ class MissionSection extends React.Component {
               <div className="contact-item-list">
                 <span className="contact-item-icon ion-android-mail"></span>
                 <span className="contact-item-title">EMAIL</span>
-                <span className="contact-item-details">thegem@domain.ltd</span>
+                <span className="contact-item-details">docs@rsk.co</span>
               </div>
             </div>
             <div className="contact-total-icon-container">

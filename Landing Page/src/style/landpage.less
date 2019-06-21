@@ -141,6 +141,18 @@
 
         .sub-header-list {
             width: 33%;
+            transition: transform .2s;
+            /* Animation */
+
+            h4 {
+                font-size: 20px;
+            }
+
+            a:hover {
+                color: #00bfa5;
+                transform: scale(1.1);
+                font-weight: 700;
+            }
         }
 
         @media @phone {
@@ -148,6 +160,12 @@
 
             .sub-header-list {
                 width: 100%;
+            }
+        }
+
+        @media @tablet {
+            .sub-header-list {
+                width: 50%;
             }
         }
     }
@@ -163,6 +181,20 @@
     list-style: none;
     text-align: center;
     margin-top: 10px;
+
+    span {
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            border-width: 0 0 1px;
+            border-style: solid;
+        }
+    }
 }
 
 .sub-header .sub-header-list a {
@@ -177,7 +209,7 @@
 }
 
 .inner-page .sub-header h4 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     letter-spacing: 1.2px;
     line-height: 38px;
@@ -234,11 +266,11 @@
     flex-direction: column;
     margin-top: 20px;
 
-    .des-box-item-container{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      color: #3c3950;
+    .des-box-item-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #3c3950;
     }
 }
 
@@ -597,8 +629,9 @@
 
 .section-core-competence {
     padding: 80px 100px 40px 100px;
-    @media @phone{
-        .core-competence-title{
+
+    @media @phone {
+        .core-competence-title {
             font-size: 24px;
         }
     }
@@ -630,13 +663,31 @@
     width: 20%;
     flex-direction: column;
     justify-content: start;
+    transition: transform .2s;
+    /* Animation */
+
+    &:hover {
+        transform: scale(1.1);
+        z-index: 9;
+    }
+
     @media @phone {
-        width:50%;
+        margin-top: 0px;
+        padding: 25px 12px;
+    }
+
+    @media @tablet {
+        margin-top: 0px;
         font-size: 16px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
-.core-competence-slogan-item.slogan-actived{
- background-color: #2fc5b0 !important;  
+
+.core-competence-slogan-item.slogan-actived {
+    background-color: #2fc5b0 !important;
+    transform: scale(1);
+    z-index: 1;
 }
 
 .core-competence-slogan-item:hover {
@@ -683,6 +734,11 @@
     padding: 40px 40px 0 40px;
 }
 
+.core-competence-content-item-title {
+    padding: 40px 40px 0 40px;
+    font-family: "source sans pro";
+}
+
 .section-ready-to-build {
     background-image: url(https://files.readme.io/e2c1bed-landpage-11.jpg);
     width: 100%;
@@ -709,7 +765,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    @media @phone{
+    @media @phone {
         font-size: 24px;
     }
 }
@@ -740,7 +796,8 @@
     font-size: 33.84px;
     letter-spacing: 1.692px;
     line-height: 49.82px;
-    @media @phone{
+
+    @media @phone {
         font-size: 24px;
         padding-bottom: 40px;
     }
@@ -1063,7 +1120,8 @@
     .lastest-blog-current-content {
         width: 100%;
     }
-    .core-competence-slogan-item{
+
+    .core-competence-slogan-item {
         width: 33.3%;
     }
 }
@@ -1140,6 +1198,10 @@
         margin-top: 60px;
     }
 
+    .inner-page .section-ready-to-build .header-btn-box {
+        height: 250px;
+    }
+
     .inner-page .btn-header.btn-light {
         align-self: center;
         margin-left: 0px;
@@ -1157,11 +1219,11 @@
     }
 
     .inner-page .des-box-item {
-        width: 100%;
+        width: 33.3%;
     }
 
     .inner-page .data-display-item {
-        width: 100%;
+        width: 50%;
     }
 
     .wrap-pad-pic {
@@ -1243,15 +1305,13 @@
         margin-top: 24px;
     }
 
-
-    .inner-page .section-ready-to-build .header-btn-box {
-        height: 250px;
-    }
-
-
     .inner-page .btn-header {
         align-self: center !important;
         margin: 0 !important;
         width: 90% !important;
+    }
+
+    .core-competence-slogan-item {
+        width: 50%;
     }
 }
