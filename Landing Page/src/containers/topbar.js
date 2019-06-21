@@ -70,7 +70,7 @@ class Topbar extends React.PureComponent {
               <div className="topbarWrapper">
                 <div className="isoLeft">
                   <div className="logo-container" style={{ margin: '0px' }}>
-                    <Link to="https://rsk-dev.readme.io/">
+                    <Link to="/">
                       <img height="64px" width="auto" src="https://files.readme.io/c8e016f-rsk1.png" alt="logo" />
                     </Link>
                   </div>
