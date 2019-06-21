@@ -1,11 +1,11 @@
 export const landPageMenu = [
   {
     name: 'Documentation',
-    link: 'https://rsk-dev.readme.io/docs',
+    link: 'https://developers.doc.rsk.co/docs',
   },
   {
     name: 'API Reference',
-    link: 'https://rsk-dev.readme.io/reference',
+    link: 'https://developers.doc.rsk.co/reference',
   },
   {
     name: 'RSK Home',
@@ -17,53 +17,53 @@ export const landPageMenu = [
   },
   {
     name: 'Discussions',
-    link: 'https://rsk-dev.readme.io/discuss',
+    link: 'https://developers.doc.rsk.co/discuss',
   },
 ];
 
 const gettingStartedList = [
   {
     name: 'RSK Introduction',
-    link: 'https://rsk-dev.readme.io/docs/rsk-introduction',
+    link: 'https://developers.doc.rsk.co/docs/rsk-introduction',
   },
   {
     name: 'Virtual Machine (RVM)',
-    link: 'https://rsk-dev.readme.io/docs/virtual-machine-rvm',
+    link: 'https://developers.doc.rsk.co/docs/virtual-machine-rvm',
   },
   {
     name: 'Node Setup',
-    link: 'https://rsk-dev.readme.io/docs/set-up-a-node',
+    link: 'https://developers.doc.rsk.co/docs/set-up-a-node',
   },
   {
     name: 'RIF Services',
-    link: 'https://rsk-dev.readme.io/docs/rif-services',
+    link: 'https://developers.doc.rsk.co/docs/rif-services',
   },
   {
     name: 'Connect with MyCrypto Wallet',
-    link: 'https://rsk-dev.readme.io/docs/connect-rsk-with-wallet',
+    link: 'https://developers.doc.rsk.co/docs/connect-rsk-with-wallet',
   },
   {
     name: 'Connect with Jaxx Wallet',
-    link: 'https://rsk-dev.readme.io/docs/connect-with-jaxx-wallet',
+    link: 'https://developers.doc.rsk.co/docs/connect-with-jaxx-wallet',
   },
   {
     name: 'Improvement Proposals',
-    link: 'https://rsk-dev.readme.io/docs/rskip',
+    link: 'https://developers.doc.rsk.co/docs/rskip',
   },
 ];
 
 const librariesToolsList = [
   {
     name: 'Summary',
-    link: 'https://rsk-dev.readme.io/docs/summary-1',
+    link: 'https://developers.doc.rsk.co/docs/summary-1',
   },
   {
     name: 'Wallet API',
-    link: 'https://rsk-dev.readme.io/docs/javascript-wallet-library',
+    link: 'https://developers.doc.rsk.co/docs/javascript-wallet-library',
   },
   {
     name: 'RSK Explorer',
-    link: 'https://rsk-dev.readme.io/docs/rsk-explorer',
+    link: 'https://developers.doc.rsk.co/docs/rsk-explorer',
   },
   {
     name: 'RSK Stats',
@@ -71,29 +71,29 @@ const librariesToolsList = [
   },
   {
     name: 'Testnet Faucet',
-    link: 'https://rsk-dev.readme.io/docs/testnet-faucet',
+    link: 'https://developers.doc.rsk.co/docs/testnet-faucet',
   },
   {
     name: 'RSK Treeview',
-    link: 'https://rsk-dev.readme.io/docs/rsk-treeview',
+    link: 'https://developers.doc.rsk.co/docs/rsk-treeview',
   },
   {
     name: 'RSK Monitor',
-    link: 'https://rsk-dev.readme.io/docs/rsk-monitor',
+    link: 'https://developers.doc.rsk.co/docs/rsk-monitor',
   },
   {
     name: 'Gas Station',
-    link: 'https://rsk-dev.readme.io/docs/gas-station',
+    link: 'https://developers.doc.rsk.co/docs/gas-station',
   },
 ];
 const smartContractDevelopmentList = [
   {
     name: 'Hello World!',
-    link: 'https://rsk-dev.readme.io/docs/hello-world',
+    link: 'https://developers.doc.rsk.co/docs/hello-world',
   },
   {
     name: 'Deploy a Smart Contract',
-    link: 'https://rsk-dev.readme.io/docs/what-is-rif',
+    link: 'https://developers.doc.rsk.co/docs/what-is-rif',
   },
 ];
 
