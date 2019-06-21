@@ -106,7 +106,8 @@ truffle(rsk)> web3.fromWei(cfToken.balanceOf(acc1).toString(10)) // = '266.4'
 ```
 
 <div style="text-align:center"><img width="50%" src="https://files.readme.io/7390a1b-token9.png"></div>
-We see that tokens taken from our deployment account were the same amount as the ones received in the **acc1**.
+
+We see that tokens taken from our deployment account were the same amount as the ones received in the **acc1** .
 
 With the **StandardToken** contract we also get allowances permissions to spend tokens on behalf of a certain account, in this case, **acc1**. If we want to do this before getting the approval, the transaction will fail (status ‘0x00’)
 
@@ -118,7 +119,7 @@ truffle(rsk)> cfToken.transferFrom(acc1, acc0, web3.toWei(5), {from: acc0})
 
 <div style="text-align:center"><img width="80%" src="https://files.readme.io/88d30a7-token10.png"></div>
 
-After checking that **acc0** is not allowed to send from acc1
+After checking that **acc0** is not allowed to send from **acc1**
 ```
 truffle(rsk)> web3.fromWei(cfToken.allowance(acc1, acc0, {from: acc0}).toString(10)) // = '0'
 ```
@@ -127,11 +128,12 @@ We authorize **acc0** to spend 10 tokens in the name of **acc1**, from a transac
 truffle(rsk)> cfToken.approve(acc0, web3.toWei(10), {from: acc1})
 0x6e1a202f4ca7f43dfb28034952d54a572993b986a55857790aa51854afbc1fb4
 ```
+
 <div style="text-align:center"><img width="80%" src="https://files.readme.io/91f23ca-token11.png"></div>
 
 
-In the output log, we see that the function was completed successfully with true and the log shows the amount allowed to acc0 for spending. Checking with allowance
-```
+In the output log, we see that the function was completed successfully with true and the log shows the amount allowed to **acc0** for spending. Checking with allowance
+```js
 truffle(rsk)> web3.fromWei(cfToken.allowance(acc1, acc0, {from: acc0}).toString(10)) // = '10'
 ```
 
