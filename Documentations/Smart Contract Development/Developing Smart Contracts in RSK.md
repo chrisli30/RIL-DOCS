@@ -410,7 +410,7 @@ truffle(rsk)> web3.eth.getBalance(account, (err, res) => console.log(res))
 To deploy the contracts, we are going to follow the same steps we made in our local network, but this time it should delay a little bit more because we are publishing them to a public network!
 
 **Step 1:**
->```js
+```js
 truffle(rsk)> compile -all
 Compiling your contracts...
 ===========================
