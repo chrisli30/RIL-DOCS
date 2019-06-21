@@ -1,14 +1,12 @@
 ## Developing Smart Contracts in RSK
 
 
-#### 1.Prepare the environment
-* [Install solidity compile from this link](https://solidity.readthedocs.io/en/develop/#available-solidity-integrations).
+#### 1. Prepare the environment
+* Install Solidity compile from [this link](https://solidity.readthedocs.io/en/develop/#available-solidity-integrations).
+* Install Truffle and Ganache [here](https://www.trufflesuite.com/).
 
-* [Installing the truffle and ganache here](https://www.trufflesuite.com/).
-
-  >Truffle is a development environment, testing framework and asset pipeline for blockchains. 
-
-  >Ganache is a personal blockchain you can use to deploy contracts, develop your applications, and run tests.
+>Truffle is a development environment, testing framework and asset pipeline for blockchains. 
+Ganache is a personal blockchain you can use to deploy contracts, develop your applications, and run tests.
 
 #### 2. Introduce usage of the truffle
 Truffle is a development environment, testing framework and asset pipeline for blockchains. In this step we are going to learn the basics.
@@ -27,7 +25,6 @@ truffle console # Starts a web3 console
 #### 3. Create a new Truffle project
 
 * Create a new folder 
-
 ```shell
 mkdir simple-storage
 cd simple-storage
@@ -38,7 +35,8 @@ truffle init
 truffle init
 ```
 If you see the following result on the terminal, this step is successful.
-```shell
+
+```
 ✔ Preparing to download
 ✔ Downloading
 ✔ Cleaning up temporary files
@@ -60,19 +58,14 @@ Then you can see the file structure like this:
 │   └── 1_initial_migration.js
 ├── test
 └── truffle-config.js
+
 This is shown in my editor:
 <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/36d06eb-truffle-1.png"></div> 
 
 * **./contracts:** All our smart contracts will be stored in this folder.
-
 * **./migrations:** Deployment scripts will be stored in this folder.
-
 * **./test:** Test scripts will be stored in this folder.
-
 * **./truffle-config:** This is Truffle’s configuration file. We’ll be able to configure networks to interact with here.
-
-
-
 
 #### 4. Run a blockchain locally
 
@@ -119,8 +112,7 @@ truffle(develop)>
 ```
 
 >**Do not close this console! All data is deleted when closed!**
-
->To connect to a blockchain network we should configure Truffle to use our node RPC endpoint. We are going to do this later.
+To connect to a blockchain network we should configure Truffle to use our node RPC endpoint. We are going to do this later.
 
 #### 5. Create your first contract
 
@@ -312,31 +304,26 @@ The transaction generates a receipt. This is the answer the blockchain generates
 4. To confirm that it was executed, we can run Step 2 again and see that the storage has changed.
 
 #### 8. Smart contract on RSK
+8.1 Get an RSK account
 
-* Get an RSK account
-  * To create our wallet we are going to use this web app: https://iancoleman.io/bip39/. **This may not be used for any 'real' wallet; it's not a secure way to generate a private key!** We are going to use it just for learning the basics.
-
-    > 1. In the 'Generate a random mnemonic' field, we select 12 words and generate it. 
-    > 2. Then tap on 'Generate'. 
-    > 3. The result appears in the BIP39 Mnemonic field. They should be 12 random words like the words in the image:
+>To create our wallet we are going to use this web app: https://iancoleman.io/bip39/. **This may not be used for any 'real' wallet; it's not a secure way to generate a private key!** We are going to use it just for learning the basics.
+1. In the 'Generate a random mnemonic' field, we select 12 words and generate it. 
+2. Then tap on 'Generate'. 
+3. The result appears in the BIP39 Mnemonic field. They should be 12 random words like the words in the image:
 <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/3670eb8-truffle-12.png"></div> 
 
-* Connect Truffle to RSK public node
+8.2 Connect Truffle to RSK public node
 
-  * To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use [truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider).(Node >= 7.6)
-
-  ```js
+>To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use [truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider).(Node >= 7.6)
+```
     npm install truffle-hdwallet-provider
-  ```
+```
 
-Open truffle-config.js file in your Truffle project and overwrite it with the following code:
-
-```js
+>Open truffle-config.js file in your Truffle project and overwrite it with the following code:
+```
 var HDWalletProvider = require('truffle-hdwallet-provider')
-
 var mnemonic = 'rocket fault regular ... YOUR MNEMONIC';// 12 key words we generated before
 var publicNode = 'https://public-node.testnet.rsk.co:443';
-
 module.exports = {
   networks: {
     rsk: {
@@ -356,43 +343,41 @@ module.exports = {
 }
 ```
 
-What we are doing is telling truffle to connect to RSK public node, and having control of your recently created account. "GasPrice" is the price we pay for fees to the network, and "gas" is the maximum gas we allow to spend on a transaction. The values are default used for RSK network. If we set these values wrongly, transactions may not be mined or waste too many funds.
-
+>What we are doing is telling truffle to connect to RSK public node, and having control of your recently created account. "GasPrice" is the price we pay for fees to the network, and "gas" is the maximum gas we allow to spend on a transaction. The values are default used for RSK network. If we set these values wrongly, transactions may not be mined or waste too many funds.
 To check our connection let's open a Truffle console:
-
 ```shell
 truffle console --network rsk
 truffle(rsk)> web3.eth.getBlockNumber((err, res) => console.log(res))
 ```
-Output:
+
+>Output:
 ```shell
 truffle(rsk)> web3.eth.getBlockNumber((err,res)=>console.log(res))
 655215
 655215
 ```
-Why not **web3.eth.blockNumber**? When we use providers to connect to a node, we must do it asynchronously!
 
+>Why not **web3.eth.blockNumber**? When we use providers to connect to a node, we must do it asynchronously!
 Do not close this console. We are going to use it in the next steps.
 
-* Get funds on RSK account
-What is our address? Let's type this in our console to know what address was unlocked with our mnemonic:
+8.3 Get funds on RSK account
 
+>What is our address? Let's type this in our console to know what address was unlocked with our mnemonic:
 ```shell
 truffle(rsk)> web3.currentProvider.wallets
 ```
 
-Output:
+>Output:
 ```js
 { '0xf08f6c2eac2183dfc0a5910c58c186496f32498d':
    p {
      _privKey:
-      <Buffer 92 c2 63 53 05 ad a8 d4 61 b9 ff 6f 37 12 d2 fa 53 c8 a6 02 29 91 9b d6 d3 3e 89 55 a4 02 b9 70>,
+      Buffer 92 c2 63 53 05 ad a8 d4 61 b9 ff 6f 37 12 d2 fa 53 c8 a6 02 29 91 9b d6 d3 3e 89 55 a4 02 b9 70,
      _pubKey:
-      <Buffer f0 b5 45 f3 9e 4e 4b 5b b0 fd 54 c5 dc cb d6 74 fc 9b 2f 5e d7 e1 50 3e 00 8a d3 d8 f5 95 83 cf 02 cf 11 25 c7 21 1b 56 2a fa 63 62 5a 9e 8f 7d 42 ef ... > } }
+      Buffer f0 b5 45 f3 9e 4e 4b 5b b0 fd 54 c5 dc cb d6 74 fc 9b 2f 5e d7 e1 50 3e 00 8a d3 d8 f5 95 83 cf 02 cf 11 25 c7 21 1b 56 2a fa 63 62 5a 9e 8f 7d 42 ef ...  } }
 ```
 
-The previously mentioned configuration having been used, only one wallet should be available. Let's save it in a variable in our console. We are going to use it soon.
-
+>The previously mentioned configuration having been used, only one wallet should be available. Let's save it in a variable in our console. We are going to use it soon.
 ```shell
 truffle(rsk)> var account = Object.keys(web3.currentProvider.wallets)[0]
 undefined
@@ -400,34 +385,32 @@ truffle(rsk)> account
 '0xf08f6c2eac2183dfc0a5910c58c186496f32498d'
 ```
 
-We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: https://faucet.testnet.rsk.co.
-
-
+>We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: https://faucet.testnet.rsk.co.
 <div style="text-align:centeDr"><img style="margin:0 auto" src="https://files.readme.io/7d28c33-get-balance-faucet.png"></div> 
 
-Steps of usage:
-> 1. Enter the address we got earlier 
-> 2. Enter the Enter check code 
-> 3. Submit form
+>Steps of usage:
+1. Enter the address we got earlier 
+2. Enter the Enter check code 
+3. Submit form
+>
 <div style="text-align:centeDr"><img style="margin:0 auto" src="https://files.readme.io/34161e4-get-balance-faucet2.png"></div> 
 
-Congratulations, you get the balance for testing.
+>Congratulations, you get the balance for testing.
 <div style="text-align:centeDr"><img style="margin:0 auto" src="https://files.readme.io/27e29ce-get-balance-from-faucet.png"></div> 
 
-Now, let's check our balance in the console:
+>Now, let's check our balance in the console:
 ```js
 truffle(rsk)> web3.eth.getBalance(account, (err, res) => console.log(res))
 999969677083000
 '999969677083000'
 ```
 
-* Deploy and interact
-
+8.4 Deploy and interact
 
 To deploy the contracts, we are going to follow the same steps we made in our local network, but this time it should delay a little bit more because we are publishing them to a public network!
 
 **Step 1:**
-```js
+>```js
 truffle(rsk)> compile -all
 Compiling your contracts...
 ===========================
@@ -437,39 +420,30 @@ Compiling your contracts...
 > Compiled successfully using:
    - solc: 0.5.0+commit.1d4f565a.Emscripten.clang
 ```
-> Note: Please make sure the build folder is clean. If not, the following will be output and the file will not be compiled:
-
+>Note: Please make sure the build folder is clean. If not, the following will be output and the file will not be compiled:
 ```shell
 Compiling your contracts...
 ===========================
 > Everything is up to date, there is nothing to compile.
 ```
 **Step 2:**
-
 ```shell
 truffle(rsk)> migrate --reset
 ```
 
-Deployment may delay a little bit.
-
+>Deployment may delay a little bit.
 If everything is ok, you will see the following output:
-
 ```js
 Compiling your contracts...
 ===========================
 > Everything is up to date, there is nothing to compile.
-
-
 Starting migrations...
 ======================
 > Network name:    'rsk'
 > Network id:      31
 > Block gas limit: 0x67c280
-
-
 1_initial_migration.js
 ======================
-
    Deploying 'Migrations'
    ----------------------
    > transaction hash:    0x2df2adf812bde74e8b4db1658441e337992a87b20b200d0b30d3bd4d4a8db2cb
@@ -483,17 +457,12 @@ Starting migrations...
    > gas price:           0.000183 gwei
    > value sent:          0 ETH
    > total cost:          0.000000052126452 ETH
-
-
    > Saving migration to chain.
    > Saving artifacts
    -------------------------------------
    > Total cost:     0.000000052126452 ETH
-
-
 2_simple_storage.js
 ===================
-
    Deploying 'SimpleStorage'
    -------------------------
    > transaction hash:    0xad292ede26df2e43c7938651c147c0199375fb9d3038a8ad22e99fea71ffc423
@@ -507,79 +476,16 @@ Starting migrations...
    > gas price:           0.000183 gwei
    > value sent:          0 ETH
    > total cost:          0.000000030322917 ETH
-
-
    > Saving migration to chain.
    > Saving artifacts
    -------------------------------------
    > Total cost:     0.000000030322917 ETH
-
-
 Summary
 =======
 > Total deployments:   2
 > Final cost:          0.000000082449369 ETH
 ```
 
-Once the contract is deployed we can use the deployed() method as we did in the private blockchain. To see the interaction with the contract we can access it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/). All interactions with our contract will appear in the explorer!
-
-
+>Once the contract is deployed we can use the deployed() method as we did in the private blockchain. To see the interaction with the contract we can access it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/). All interactions with our contract will appear in the explorer!
 <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/21f88b0-check-on-explorer-1.png"></div> 
-<div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/4365ef7-check-on-explorer.png"></div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/4365ef7-check-on-explorer.png"></div>

@@ -3,11 +3,12 @@
     width: 100%;
     z-index: 10;
     background-color: white;
-    
+
     @media @phone {
         .ant-layout-header {
             padding-left: 0px;
             padding-right: 0px;
+
             img {
                 width: 120px;
             }
@@ -18,6 +19,11 @@
 .topbarWrapper {
     font-size: 16px;
     display: flex;
+
+    @media @tablet-strict {
+        margin-left: -20px; // To cancel horizontalWrapper padding
+        margin-right: -20px;
+    }
 }
 
 .isoLeft,
@@ -27,10 +33,12 @@
 
 .isoLeft {
     flex: 1 0 0;
+
     .logo-container {
         a {
             display: block;
         }
+
         img {
             vertical-align: middle;
         }
@@ -44,63 +52,85 @@
         background-color: transparent;
         background-image: none;
         border: 1px solid transparent;
+
         .icon-bar {
             width: 22px;
             height: 2px;
             transition: all 0.2s;
             background-color: @bgColor;
             display: block;
+
             &:not(:first-of-type) {
                 margin-top: 4px;
             }
         }
+
         .top-bar {
             transform: rotate(45deg);
             transform-origin: 10% 10%;
         }
+
         .middle-bar {
             opacity: 0;
         }
+
         .bottom-bar {
             transform: rotate(-45deg);
             transform-origin: 10% 90%;
         }
+
         &.menuCollapsed {
             .top-bar {
                 transform: rotate(0deg);
             }
+
             .middle-bar {
                 opacity: 1;
             }
+
             .bottom-bar {
                 transform: rotate(0deg);
             }
         }
     }
+
     li {
         position: relative;
         padding-left: 18px;
         padding-right: 18px;
         display: inline-block;
+
+        @media @tablet-strict {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
         a {
             color: @fontColor;
+
             i {
                 padding-left: 6px;
                 font-size: 16px;
             }
-        } // border style for the last <li><a>
+        }
+
+        // border style for the last <li><a>
         &:last-of-type a {
             border: 1px solid @fontColor;
             padding: 6px 12px;
+
             i {
                 font-weight: 700;
                 margin-right: 4px;
             }
+
             &:hover {
                 background-color: rgba(153, 153, 153, 0.2);
                 .transition(background-color .5s ease);
             }
-        } // Underline style for topbar right
+        }
+
+        // Underline style for topbar right
         &:not(:last-of-type) {
             &:after {
                 content: "";
@@ -117,6 +147,7 @@
                 -ms-transition: width .5s ease, background-color .5s ease;
                 -o-transition: width .5s ease, background-color .5s ease;
             }
+
             &:hover:after {
                 background-color: @fontColor;
                 width: 100%;
@@ -136,21 +167,26 @@
     -moz-transition: max-height .5s ease;
     -ms-transition: max-height .5s ease;
     -o-transition: max-height .5s ease;
+
     ul {
         display: flex;
         flex-direction: column;
+
         li {
             height: 4em;
             line-height: 4em;
             text-align: center;
+
             &:last-of-type {
                 border-top: 1px solid #ddd;
             }
         }
     }
+
     a {
         color: @fontColor;
     }
+
     &.menuCollapsed {
         max-height: 0px;
         border: 0px;
