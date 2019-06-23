@@ -15,7 +15,7 @@ const menuOnDeskTop = landPageMenu.map((item) => (
 ));
 
 const menuOnMobile = landPageMenu.map((item) => (
-  <li key={`menu-list-${item.name}-mobile`} className="hideOnMobile">
+  <li key={`menu-list-${item.name}-mobile`} className="hideOnLarge">
     <a href={item.link} alt={item.name}>{item.name}</a>
   </li>
 ));
