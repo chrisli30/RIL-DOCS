@@ -3,10 +3,10 @@ export const landPageMenu = [
     name: 'Documentation',
     link: 'https://developers.doc.rsk.co/docs',
   },
-  {
-    name: 'API Reference',
-    link: 'https://developers.doc.rsk.co/reference',
-  },
+  // {
+  //   name: 'API Reference',
+  //   link: 'https://developers.doc.rsk.co/reference',
+  // },
   {
     name: 'RSK Home',
     link: 'https://www.rsk.co/',
