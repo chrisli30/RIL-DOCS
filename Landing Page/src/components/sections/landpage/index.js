@@ -230,7 +230,7 @@ class MissionSection extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="lower-half">
+            {/* <div className="lower-half">
               <div className="data-display-box">
                 <div className="data-display-item">
                   <div className="data-display-main">
@@ -265,9 +265,9 @@ class MissionSection extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="hideOnMobile hideOnLarge reason-for-choice">
+          {/* <div className="hideOnMobile hideOnLarge reason-for-choice">
             <div className="wrap-pad-pic">
               <img src="https://codex-themes.com/thegem/wp-content/uploads/2016/03/3-1.png" alt="" />
             </div>
@@ -474,7 +474,7 @@ class MissionSection extends React.Component {
             <div className="middle-logo-btn-container">
               <a className="btn-middle-logo">great, i want buy now!</a>
             </div>
-          </div>
+          </div> */}
 
           <div className="section-core-competence" id="coreCompetenceSection">
             <div className="core-competence-title">WHY BUILD ON RSK+RIFOS</div>
@@ -512,7 +512,7 @@ class MissionSection extends React.Component {
               <a href="https://rsk-dev.readme.io/" target="_self" className="btn-light btn-header">FULL DOCUMENTATION</a>
             </div>
           </div>
-          <div className="section-lastest-blog">
+          {/* <div className="section-lastest-blog">
             <div className="lastest-blog-title">LATEST NEWS FROM BLOG</div>
             <div className="lastest-blog-container">
               <div className="lastest-blog-current">
@@ -623,7 +623,7 @@ class MissionSection extends React.Component {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     );
