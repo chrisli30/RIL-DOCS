@@ -256,7 +256,6 @@
 }
 
 .inner-page .des-box-item {
-    width: 33.3%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -268,6 +267,22 @@
         flex-direction: column;
         color: #3c3950;
     }
+    .community-icon{
+        font-size: 24px;
+    }
+    @media @phone {
+        width: 50%;
+    }
+    @media @desktop {
+        width: 20%;
+    }
+    @media @tablet {
+        width: 33.3%;
+    }
+    &:hover .des-icon{
+        color: #fff;
+    }
+
 }
 
 .inner-page .box-of-icon__des {
@@ -311,7 +326,6 @@
 .inner-page .des-box-item:hover .box-of-icon__des {
     background-color: #3c3950;
     transition: all 0.3s ease;
-
 }
 
 .inner-page .des-icon path {
@@ -1143,10 +1157,6 @@
         font-size: 8vw;
     }
 
-    .inner-page .des-box-item {
-        width: 50%;
-    }
-
     .wrap-pad-pic {
         height: 70vw;
     }
@@ -1227,9 +1237,6 @@
         text-align: center;
     }
 
-    .inner-page .des-box-item {
-        width: 33.3%;
-    }
 
     .inner-page .data-display-item {
         width: 50%;
