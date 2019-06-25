@@ -159,8 +159,9 @@ const CoreAppsAndInfrastructureMarketplace = {
   content: `The RIF utility token allows developers to access an ever-growing infrastructure services marketplace. It also opens up the possibility of participating in such marketplace as a provider, monetizing
   their available infrastructure within the RSK+RIFOS ecosystem and its growing user base.
   The RIF Token brings a seamless way to buy and sell decentralized infrastructure within our ecosystem. One token, endless possibilities. We can’t wait to see what you build next!
-  To learn more about current and future plans for the RIF Token, please go here.`,
-  link: '',
+  To learn more about current and future plans for the RIF Token, please visit `,
+  link: 'https://www.rifos.org/rif-token/',
+  linkName: 'RIF Token',
 };
 
 
