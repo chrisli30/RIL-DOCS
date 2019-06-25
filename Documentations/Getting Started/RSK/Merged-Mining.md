@@ -20,7 +20,7 @@ Main features:
 
 
 • DECOR+ consensus protocol
-• one-day maturity for mining reward
+• One-day maturity for mining reward
 • No loss of efficiency in Bitcoin mining expected from merge mining (for late mid-
 state switching)
 
