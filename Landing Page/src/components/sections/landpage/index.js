@@ -6,6 +6,14 @@ import { subListArray, artistList, artistDetailList } from '../../../config/cons
 import { cloudinaryConfig } from '../../react-cloudinary';
 cloudinaryConfig({ cloud_name: 'dd1ixvdxn' });
 
+const artistDetailElements = artistDetailList.map((item, idx) => (
+  <p key={`artist-details-content-${item.name}`} className="core-competence-content-item">
+    <span>{item.content}</span>
+    {
+      item.link ? <a href={item.link} className="artist-details-content-link" target="_blank">{item.linkName}</a> : ''
+    }
+  </p>
+));
 const artistIconArray = [
   <svg style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
     <path
@@ -493,11 +501,9 @@ class MissionSection extends React.Component {
             </div>
             <div className="core-competence-content">
               <h2 className="core-competence-content-item-title">{artistList[artistIdx]}</h2>
-              <p className="core-competence-content-item">
-                {
-                  artistDetailList[artistIdx]
-                }
-              </p>
+              {
+                artistDetailElements[artistIdx]
+              }
             </div>
           </div>
           <div className="section-ready-to-build">
