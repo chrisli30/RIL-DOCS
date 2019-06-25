@@ -153,9 +153,9 @@ class MissionSection extends React.Component {
               </div>
             </div>
             <div className="header-btn-box">
-              <a href="https://rsk-dev.readme.io/docs/set-up-a-node" target="_self" className="btn-light btn-header">NODE SETUP</a>
-              <a href="https://rsk-dev.readme.io/docs/connect-rsk-with-wallet" target="_self" className="btn-default btn-header">WALLET SETUP</a>
-              <a href="https://rsk-dev.readme.io/docs/rns" target="_self" className="btn-default btn-header">DOMAIN REGISTER</a>
+              <a href="https://developers.doc.rsk.co/docs/set-up-a-node" target="_self" className="btn-light btn-header">NODE SETUP</a>
+              <a href="https://developers.doc.rsk.co/docs/connect-to-rsk" target="_self" className="btn-default btn-header">WALLET SETUP</a>
+              <a href="https://developers.doc.rsk.co/docs/rns" target="_self" className="btn-default btn-header">DOMAIN REGISTER</a>
             </div>
           </div>
           <div className="sub-header">
@@ -505,10 +505,10 @@ class MissionSection extends React.Component {
               Ready to start building?
             </div>
             <div className="header-btn-box">
-              <a href="https://rsk-dev.readme.io/docs/set-up-a-node" target="_self" className="btn-light btn-header">NODE SETUP</a>
-              <a href="https://rsk-dev.readme.io/docs/connect-rsk-with-wallet" target="_self" className="btn-light btn-header">WALLET SETUP</a>
-              <a href="https://rsk-dev.readme.io/docs/rns" target="_self" className="btn-light btn-header">DOMAIN REGISTER</a>
-              <a href="https://rsk-dev.readme.io/" target="_self" className="btn-light btn-header">FULL DOCUMENTATION</a>
+              <a href="https://developers.doc.rsk.co/docs/set-up-a-node" target="_self" className="btn-light btn-header">NODE SETUP</a>
+              <a href="https://developers.doc.rsk.co/docs/connect-to-rsk" target="_self" className="btn-light btn-header">WALLET SETUP</a>
+              <a href="https://developers.doc.rsk.co/docs/rns" target="_self" className="btn-light btn-header">DOMAIN REGISTER</a>
+              <a href="https://developers.doc.rsk.co/docs" target="_self" className="btn-light btn-header">FULL DOCUMENTATION</a>
             </div>
           </div>
           {/* <div className="section-lastest-blog">

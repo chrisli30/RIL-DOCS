@@ -8,7 +8,7 @@ export const landPageMenu = [
   //   link: 'https://developers.doc.rsk.co/reference',
   // },
   {
-    name: 'RSK Home',
+    name: 'RSK',
     link: 'https://www.rsk.co/',
   },
   {
@@ -40,11 +40,11 @@ const gettingStartedList = [
   },
   {
     name: 'Connect with MyCrypto Wallet',
-    link: 'https://developers.doc.rsk.co/docs/connect-rsk-with-wallet',
+    link: 'https://developers.doc.rsk.co/docs/connect-with-mycrypto-wallet',
   },
   {
-    name: 'Connect with Jaxx Wallet',
-    link: 'https://developers.doc.rsk.co/docs/connect-with-jaxx-wallet',
+    name: 'Connect with MetaMask',
+    link: 'https://developers.doc.rsk.co/docs/connect-with-metamask',
   },
   {
     name: 'Improvement Proposals',
@@ -53,10 +53,6 @@ const gettingStartedList = [
 ];
 
 const librariesToolsList = [
-  {
-    name: 'Summary',
-    link: 'https://developers.doc.rsk.co/docs/summary-1',
-  },
   {
     name: 'Wallet API',
     link: 'https://developers.doc.rsk.co/docs/javascript-wallet-library',
@@ -93,7 +89,11 @@ const smartContractDevelopmentList = [
   },
   {
     name: 'Deploy a Smart Contract',
-    link: 'https://developers.doc.rsk.co/docs/what-is-rif',
+    link: 'https://developers.doc.rsk.co/docs/deploy-a-smart-contract',
+  },
+  {
+    name: 'Interact with Smart Contract',
+    link: 'https://developers.doc.rsk.co/docs/interaction-with-the-contract',
   },
 ];
 
@@ -134,7 +134,7 @@ export const artistDetailList = [
   now, unable to consider this new technology as an alternative.`,
   `We believe Bitcoin is the gold-standard of blockchains and the most secure, immutable and decentralized network in the world. This is why RSK’s architecture is built on top of it. Yet, our view is that
   business logic and application layers should be separated from the underlying blockchain. This not only makes developing easier (by eliminating the need to learn how a particular blockchain works),
-  but also safer and more flexible for the future.  `,
+  but also safer and more flexible for the future.`,
   `The RIF utility token allows developers to access an ever-growing infrastructure services marketplace. It also opens up the possibility of participating in such marketplace as a provider, monetizing
   their available infrastructure within the RSK+RIFOS ecosystem and its growing user base.
   The RIF Token brings a seamless way to buy and sell decentralized infrastructure within our ecosystem. One token, endless possibilities. We can’t wait to see what you build next!
