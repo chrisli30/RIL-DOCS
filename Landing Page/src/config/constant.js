@@ -2,22 +2,22 @@ export const landPageMenu = [
   {
     name: 'Documentation',
     link: 'https://developers.doc.rsk.co/docs',
+    ifOpenNewTab: false,
   },
-  // {
-  //   name: 'API Reference',
-  //   link: 'https://developers.doc.rsk.co/reference',
-  // },
   {
     name: 'RSK',
     link: 'https://www.rsk.co/',
+    ifOpenNewTab: true,
   },
   {
     name: 'RIFOS',
     link: 'https://www.rifos.org/',
+    ifOpenNewTab: true,
   },
   {
     name: 'Discussions',
     link: 'https://developers.doc.rsk.co/discuss',
+    ifOpenNewTab: false,
   },
 ];
 
@@ -25,30 +25,32 @@ const gettingStartedList = [
   {
     name: 'RSK Introduction',
     link: 'https://developers.doc.rsk.co/docs/rsk-introduction',
-  },
-  {
-    name: 'Virtual Machine (RVM)',
-    link: 'https://developers.doc.rsk.co/docs/virtual-machine-rvm',
+    ifOpenNewTab: false,
   },
   {
     name: 'Node Setup',
     link: 'https://developers.doc.rsk.co/docs/set-up-a-node',
+    ifOpenNewTab: false,
   },
   {
     name: 'RIF Services',
     link: 'https://developers.doc.rsk.co/docs/rif-services',
+    ifOpenNewTab: false,
   },
   {
     name: 'Connect with MyCrypto Wallet',
     link: 'https://developers.doc.rsk.co/docs/connect-with-mycrypto-wallet',
+    ifOpenNewTab: false,
   },
   {
     name: 'Connect with MetaMask',
     link: 'https://developers.doc.rsk.co/docs/connect-with-metamask',
+    ifOpenNewTab: false,
   },
   {
     name: 'Improvement Proposals',
     link: 'https://developers.doc.rsk.co/docs/rskip',
+    ifOpenNewTab: false,
   },
 ];
 
@@ -56,44 +58,56 @@ const librariesToolsList = [
   {
     name: 'Wallet API',
     link: 'https://developers.doc.rsk.co/docs/javascript-wallet-library',
+    ifOpenNewTab: false,
   },
   {
     name: 'RSK Explorer',
     link: 'https://developers.doc.rsk.co/docs/rsk-explorer',
+    ifOpenNewTab: false,
   },
   {
     name: 'RSK Stats',
     link: 'https://stats.rsk.co/',
+    ifOpenNewTab: true,
+
   },
   {
     name: 'Testnet Faucet',
     link: 'https://developers.doc.rsk.co/docs/testnet-faucet',
+    ifOpenNewTab: false,
+
   },
   {
     name: 'RSK Treeview',
     link: 'https://developers.doc.rsk.co/docs/rsk-treeview',
+    ifOpenNewTab: false,
   },
   {
     name: 'RSK Monitor',
     link: 'https://developers.doc.rsk.co/docs/rsk-monitor',
+    ifOpenNewTab: false,
   },
   {
     name: 'Gas Station',
     link: 'https://developers.doc.rsk.co/docs/gas-station',
+    ifOpenNewTab: false,
   },
 ];
 const smartContractDevelopmentList = [
   {
     name: 'Hello World!',
     link: 'https://developers.doc.rsk.co/docs/hello-world',
+    ifOpenNewTab: false,
   },
   {
     name: 'Deploy a Smart Contract',
     link: 'https://developers.doc.rsk.co/docs/deploy-a-smart-contract',
+    ifOpenNewTab: false,
   },
   {
     name: 'Interact with Smart Contract',
     link: 'https://developers.doc.rsk.co/docs/interaction-with-the-contract',
+    ifOpenNewTab: false,
   },
 ];
 
@@ -137,6 +151,7 @@ const EnterpriseGradesecurity = {
   You can read more about the underlying technology behind `,
   link: 'https://github.com/rsksmart',
   linkName: 'RSK Github',
+  ifOpenNewTab: true,
 };
 const FastAndScalable = {
   title: 'Fast and scalable',
@@ -146,6 +161,7 @@ const FastAndScalable = {
   now, unable to consider this new technology as an alternative. To learn more, you can visit `,
   link: 'https://developers.doc.rsk.co/docs/rsk-introduction',
   linkName: 'RSK Introductions',
+  ifOpenNewTab: false,
 };
 const poweredBySmartContracts = {
   title: 'Built on Bitcoin, powered by Smart Contracts',
