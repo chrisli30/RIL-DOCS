@@ -9,7 +9,7 @@ import { themeConfig } from '../config';
 import { landPageMenu } from '../config/constant';
 const menuOnDeskTop = landPageMenu.map((item) => (
   <li key={`menu-list-${item.name}`} className="hideOnMobile">
-    <a href={item.link} alt={item.name}>{item.name}
+    <a href={item.link} target={item.ifOpenNewTab ? '_blank' : '_self'}>{item.name}
     </a>
   </li>
 ));

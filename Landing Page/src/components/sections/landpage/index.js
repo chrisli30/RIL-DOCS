@@ -10,7 +10,7 @@ const artistDetailElements = artistDetailList.map((item, idx) => (
   <p key={`artist-details-content-${item.name}`} className="core-competence-content-item">
     <span>{item.content}</span>
     {
-      item.link ? <a href={item.link} className="artist-details-content-link" target="_blank">{item.linkName}</a> : ''
+      item.link ? <a href={item.link} className="artist-details-content-link" target={item.ifOpenNewTab ? '_blank' : '_self'}>{item.linkName}</a> : ''
     }
   </p>
 ));
@@ -90,7 +90,7 @@ const categoryListArea = subListArray.map((item) => (
     <ul>
       {
         item.details.map((detail) => (
-          <a href={detail.link}><li className key={`getting-start-list-${detail.name}`}><span>{detail.name}</span></li></a>
+          <a key={`sub-list-category-links-${detail.name}`} href={detail.link} target={detail.ifOpenNewTab ? '_blank' : '_self'}><li className key={`getting-start-list-${detail.name}`}><span>{detail.name}</span></li></a>
         ))
       }
     </ul>
