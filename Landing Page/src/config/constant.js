@@ -136,7 +136,7 @@ const EnterpriseGradesecurity = {
   Also, as an open source product, we have one of the most active Github communities in the Bitcoin space, with twice as many commits as the bitcoin blockchain and XX members (and growing fast).
   You can read more about the underlying technology behind `,
   link: 'https://github.com/rsksmart',
-  linkName: 'RSK Documents',
+  linkName: 'RSK Github',
 };
 const FastAndScalable = {
   title: 'Fast and scalable',
