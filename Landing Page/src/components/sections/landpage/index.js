@@ -180,57 +180,56 @@ class MissionSection extends React.Component {
               >JOIN RSK COMMUNITY</h4>
               <div className="des-box">
                 <div className="des-box-item">
-                  <a href="https://join.slack.com/t/rskis/shared_invite/enQtNjU5OTY4OTM0OTk0LTViNDc0YWIwMzlmNGQ3OTA4YmFhYzFjYmJiZDhiOGEzOGM3N2IwYWRlNDMwMzgyMDhkYjQ1MmNjNDc3Y2M4M2E" target="_blank">
+                  <a href="https://twitter.com/rsksmart" target="_blank">
                     <div className="des-box-item-container">
                       <div className="box-of-icon__des">
-                        <svg className="icon-trophy des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
-                          <path
-                            fill="#000000"
-                            d="M20.2,2H19.5H18C17.1,2 16,3 16,4H8C8,3 6.9,2 6,2H4.5H3.8H2V11C2,12 3,13 4,13H6.2C6.6,15 7.9,16.7 11,17V19.1C8.8,19.3 8,20.4 8,21.7V22H16V21.7C16,20.4 15.2,19.3 13,19.1V17C16.1,16.7 17.4,15 17.8,13H20C21,13 22,12 22,11V2H20.2M4,11V4H6V6V11C5.1,11 4.3,11 4,11M20,11C19.7,11 18.9,11 18,11V6V4H20V11Z"
-                          />
-                        </svg>
+                        <span className="ion-social-twitter community-icon des-icon"></span>
                       </div>
                       <div className="des-item-title">
                         <div>
-                      SLACK
+                      TWITTER
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div className="des-box-item">
-                  <a href="https://discord.gg/z9X5ey" target="_blank">
+                  <a href="https://gitter.im/rsksmart" target="_blank">
                     <div className="des-box-item-container">
                       <div className="box-of-icon__des">
-                        <svg className="icon-puzzle des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
-                          <path
-                            fill="#000000"
-                            d="M20.5,11H19V7C19,5.89 18.1,5 17,5H13V3.5A2.5,2.5 0 0,0 10.5,1A2.5,2.5 0 0,0 8,3.5V5H4A2,2 0 0,0 2,7V10.8H3.5C5,10.8 6.2,12 6.2,13.5C6.2,15 5,16.2 3.5,16.2H2V20A2,2 0 0,0 4,22H7.8V20.5C7.8,19 9,17.8 10.5,17.8C12,17.8 13.2,19 13.2,20.5V22H17A2,2 0 0,0 19,20V16H20.5A2.5,2.5 0 0,0 23,13.5A2.5,2.5 0 0,0 20.5,11Z"
-                          />
-                        </svg>
+                        <svg className="des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 384 512"><path d="M66.4 322.5H16V0h50.4v322.5zM166.9 76.1h-50.4V512h50.4V76.1zm100.6 0h-50.4V512h50.4V76.1zM368 76h-50.4v247H368V76z" /></svg>
                       </div>
                       <div className="des-item-title">
                         <div>
-                      DISCORD
+                        GITTER
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div className="des-box-item">
-                  <a href="https://t.me/RSKDevgroup" target="_blank">
+                  <a href="https://github.com/rsksmart" target="_blank">
                     <div className="des-box-item-container">
                       <div className="box-of-icon__des">
-                        <svg className="icon-lightbulb des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
-                          <path
-                            fill="#000000"
-                            d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21A1,1 0 0,0 10,22H14A1,1 0 0,0 15,21V20H9V21Z"
-                          />
-                        </svg>
+                        <span className="ion-social-github community-icon des-icon"></span>
                       </div>
                       <div className="des-item-title">
                         <div>
-                      TELEGRAM
+                      GITHUB
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div className="des-box-item">
+                  <a href="https://hackerone.com/rsksmart" target="_blank">
+                    <div className="des-box-item-container">
+                      <div className="box-of-icon__des">
+                        <svg className="des-icon" style={{ width: '24px', height: '24px' }} viewBox="0 0 256 478"><path d="M9.132 5.98C3.075 9.966 0 15.178 0 21.486v433.84c0 5.503 3.15 10.5 9.457 15.14 6.263 4.647 13.983 6.963 23.196 6.963 8.806 0 16.527-2.316 23.233-6.963 6.67-4.595 10.063-9.637 10.063-15.14V21.523c0-6.346-3.23-11.476-9.737-15.542C49.704 2.034 41.866 0 32.653 0c-9.62 0-17.459 2.034-23.52 5.98zM198.856 178.3l-88.296 55.346c-3.956 3.701-5.657 9.325-4.925 17.01.68 7.61 4.2 14.856 10.426 21.693 6.256 6.88 13.25 11.193 21.251 13.025 7.882 1.787 13.865.812 17.821-2.852l34.916-21.776v194.58c0 5.502 3.032 10.5 9.17 15.139 5.98 4.647 13.663 6.963 22.877 6.963 9.213 0 17.17-2.316 23.84-6.963 6.706-4.64 10.064-9.637 10.064-15.14V193.723c0-6.353-3.277-11.476-9.74-15.423-6.469-4.03-14.507-5.988-24.164-5.988-9.62 0-17.34 1.959-23.24 5.988z" /></svg>
+                      </div>
+                      <div className="des-item-title">
+                        <div>
+                      HACKERONE
                         </div>
                       </div>
                     </div>
