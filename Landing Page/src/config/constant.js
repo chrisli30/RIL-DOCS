@@ -133,7 +133,7 @@ const EnterpriseGradesecurity = {
   title: 'Enterprise-grade security',
   content: `The RSK blockchain is the first Turing-complete, open-source smart contract platform secured by the Bitcoin network through merge-mining.
   Our mainnet has been live for over 18 months, and has had zero down-time so far.
-  Also, as an open source product, we have one of the most active Github communities in the Bitcoin space, with twice as many commits as the bitcoin blockchain and XX members (and growing fast).
+  Also, as an open source product, we have one of the most active Github communities in the Bitcoin space, with twice as many commits as the bitcoin blockchain and growing fast.
   You can read more about the underlying technology behind `,
   link: 'https://github.com/rsksmart',
   linkName: 'RSK Github',
