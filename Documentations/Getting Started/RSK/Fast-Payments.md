@@ -2,7 +2,7 @@
 
 RSK already enables second layer off-chain payment networks, but still RSK aims to provide a much better on-chain payment network compared to Bitcoin. To achieve this, RSK adopts the DECOR+ and FastBlock5 protocols, which allow reaching a fifteen second average block rate that does not create incentives for mining centralization and selfish- mining.
 Main features:
-* fifteen to thirty second block intervals (depending on the miner’s state switching efficiency)
+* Fifteen to thirty second block intervals (depending on the miner’s state switching efficiency)
 * Full network propagation of last competing blocks to prevent selfish mining and
 RSK White Paper Overview Page 17/20
  reduce stale block rate
