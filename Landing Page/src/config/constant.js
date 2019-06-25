@@ -127,12 +127,11 @@ export const artistDetailList = [
   experts. Our architecture is designed to abstract all the complexities of distributed technology, focusing on what’s important to developers: a great UX, proper documentation and support. `,
   `The RSK blockchain is the first Turing-complete, open-source smart contract platform secured by the Bitcoin network through merge-mining.
   Our mainnet has been live for over 18 months, and has had zero down-time so far.
-  Also, as an open source product, we have one of the most active Github communities in the Bitcoin space, with twice as many commits as the bitcoin blockchain and XX members (and growing fast).
-  You can read more about the underlying technology behind RSK here [link to proper site or documentation]`,
+  Also, as an open source product, we have one of the most active Github communities in the Bitcoin space, with twice as many commits as the bitcoin blockchain and growing fast.`,
   `Off the bat, the RSK blockchain is capable of processing up to 100 transactions per second (TPS) on chain without affecting decentralization. Through a series of compression protocols, this number
   can go up to 400 TPS on-chain. In addition, we recently launched our off-chain payments protocol called Lumino, which brings near-instant payments processing speeds to all tokens deployed on the
   RSK+RIFOS ecosystem. As a result, we are able to provide a reliable, fast and economically viable solution for the decentralized infrastructure required for multiple business models that were, until
-  now, unable to consider this new technology as an alternative. To learn more, you can visit [link to proper site or documentation]`,
+  now, unable to consider this new technology as an alternative.`,
   `We believe Bitcoin is the gold-standard of blockchains and the most secure, immutable and decentralized network in the world. This is why RSK’s architecture is built on top of it. Yet, our view is that
   business logic and application layers should be separated from the underlying blockchain. This not only makes developing easier (by eliminating the need to learn how a particular blockchain works),
   but also safer and more flexible for the future.  `,
