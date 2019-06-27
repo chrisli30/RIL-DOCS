@@ -8,7 +8,7 @@
 
 #### [Turing-Complete Virtual Machine (RVM)](./Turing-Complete.md)
 
-The Rootstock Virtual Machine (RVM) is compatible with the Ethereum Virtual Machine (EVM) at the op-code level, allowing Ethereum contracts to run flawlessly on the RSK blockchain.
+The RSK Virtual Machine (RVM) is compatible with the Ethereum Virtual Machine (EVM) at the op-code level, allowing Ethereum contracts to run flawlessly on the RSK blockchain.
 
 There are numerous performance improvements documented and being developed known as RSK Improvement Proposals (RSKIP's), created by the RSK team and community.
 
@@ -16,13 +16,13 @@ There are numerous performance improvements documented and being developed known
 
 A sidechain is an independent blockchain whose native currency is pegged to the value of currency of another mutually independent blockchain automatically using proofs of payment. A two-way pegged sidechain provides proofs that will allow anyone monitoring the main blockchain and the sidechain to verify when currency value is pegged, and additionally provides users who possess the appropriate private keys that control currency on either blockchain to peg (lock) currency on one chain, and release (unlock) currency value on the other, and vice versa. 
 
-In RSK, the Smart Bitcoin (RBTC) on the Rootstock blockchain is Two-way pegged to BTC on the Bitcoin blockchain.
+In RSK, the Smart Bitcoin (RBTC) on the RSK blockchain is Two-way pegged to BTC on the Bitcoin blockchain.
 
 As of January 2019, the RSK Federation comprises 15 well-known, and highly-secure notaries. Leading Blockchain companies currently integrate the RSK Federation and participate in an autonomous protocol to securely lock Bitcoins. 
 
 #### [Merged Mining](./Merged-Mining.md)
 
-Merge mining is a mechanism that allows Bitcoin miners to mine other cryptocurrencies simultaneously with nearly zero marginal cost. The same mining infrastructure, hardware and software they use to mine Bitcoins is used with almost no additional overhead to mine the Rootstock sidechain simultaneously. This is done by creating a unique output whenever the miner discovers a new Bitcoin block and broadcasts that to the bitcoin network. This means that the miners are rewarded with the additional transaction fees on the RSK sidechain, and as transactions increase on the RSK blockchain, the incentive for merged mining becomes increases.
+Merge mining is a mechanism that allows Bitcoin miners to mine other cryptocurrencies simultaneously with nearly zero marginal cost. The same mining infrastructure, hardware and software they use to mine Bitcoins is used with almost no additional overhead to mine the RSK sidechain simultaneously. This is done by creating a unique output whenever the miner discovers a new Bitcoin block and broadcasts that to the bitcoin network. This means that the miners are rewarded with the additional transaction fees on the RSK sidechain, and as transactions increase on the RSK blockchain, the incentive for merged mining becomes increases.
 
 #### [Fast Payments and Low-Latency-Network](./Fast-Payments.md)
 
