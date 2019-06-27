@@ -38,7 +38,7 @@ const gettingStartedList = [
     ifOpenNewTab: false,
   },
   {
-    name: 'Connect to RSK',
+    name: 'Connect with Wallet',
     link: 'https://developers.doc.rsk.co/docs/connect-to-rsk',
     ifOpenNewTab: false,
   },
