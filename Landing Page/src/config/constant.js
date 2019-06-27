@@ -38,13 +38,8 @@ const gettingStartedList = [
     ifOpenNewTab: false,
   },
   {
-    name: 'Connect with MyCrypto Wallet',
-    link: 'https://developers.doc.rsk.co/docs/connect-with-mycrypto-wallet',
-    ifOpenNewTab: false,
-  },
-  {
-    name: 'Connect with MetaMask',
-    link: 'https://developers.doc.rsk.co/docs/connect-with-metamask',
+    name: 'Connect with Wallet',
+    link: 'https://developers.doc.rsk.co/docs/connect-to-rsk',
     ifOpenNewTab: false,
   },
   {
@@ -76,16 +71,6 @@ const librariesToolsList = [
     link: 'https://developers.doc.rsk.co/docs/testnet-faucet',
     ifOpenNewTab: false,
 
-  },
-  {
-    name: 'RSK Treeview',
-    link: 'https://developers.doc.rsk.co/docs/rsk-treeview',
-    ifOpenNewTab: false,
-  },
-  {
-    name: 'RSK Monitor',
-    link: 'https://developers.doc.rsk.co/docs/rsk-monitor',
-    ifOpenNewTab: false,
   },
   {
     name: 'Gas Station',
