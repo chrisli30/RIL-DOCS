@@ -22,7 +22,11 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 
 const mnemonic = 'view blood flavor endless truth lobster seed ice anxiety guide pulp laundry';
 
-var publicNode = 'https://public-node.testnet.rsk.co:443'
+const publicNode = 'https://public-node.testnet.rsk.co:443'
+
+const PrivateKeyProvider = require("truffle-privatekey-provider");
+ 
+const privateKey = "c85ef7d79691fe79573b1a7064c19c1a9819ebdbd1faaab1a8ec92344438aaf4"; // Public Key: 0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826
 
 module.exports = {
   networks: {
@@ -32,6 +36,12 @@ module.exports = {
       network_id: '*',
       gas: 2500000,
       gasPrice: 183000
+    },
+    regtest: {
+      provider: new PrivateKeyProvider(privateKey, "http://127.0.0.1:4444"),
+      host: "127.0.0.1",
+      port: 4444,
+      network_id: "*"
     }
   },
   // Configure your compilers
