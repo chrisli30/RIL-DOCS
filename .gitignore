@@ -50,4 +50,4 @@ node_modules
 .DS_Store
 */.DS_Store
 
-/Smart Contract/build/**
+Smart Contract/build/**
