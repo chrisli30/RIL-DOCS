@@ -10,8 +10,8 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon.png">
-<!--     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" async> -->    
- <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,700" rel="stylesheet" async>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" async> -->    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,700" rel="stylesheet" async>
 
     <link async rel="stylesheet" href="%PUBLIC_URL%/css/ionicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/react-instantsearch-theme-algolia@4.0.0/style.min.css">
@@ -28,6 +28,16 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>RSK Developer Portal</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124571797-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124571797-2');
+    </script>
   </head>
   <body>
     <noscript>
