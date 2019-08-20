@@ -4,6 +4,7 @@ logs
 mongodump
 nohup.out
 package-lock.json
+stats.json
 
 # Dist
 dist
