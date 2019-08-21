@@ -18,7 +18,6 @@ const Wrapper = styled.div`
   text-align: center;
   margin: 4em auto;
   padding:0 4em;
-  
 `;
 
 export default function ComponentsPage() {
@@ -38,7 +37,7 @@ export default function ComponentsPage() {
         </Button>
       </Wrapper>
 
-      <Title>Card</Title>
+      <Title>Pic Card</Title>
       <Wrapper>
         <Card
           height="300px"
@@ -49,7 +48,21 @@ export default function ComponentsPage() {
               'url(https://www.rsk.co/wp-content/uploads/2019/02/rsk-home-partners-1.jpg)',
           }}
         >
-          Card
+        </Card>
+      </Wrapper>
+      <Title>Text Card</Title>
+      <Wrapper>
+        <Card
+          height="300px"
+          width="500px"
+          hasShadow
+        >
+          <Content>
+          The RSK Innovation Studio is singularly focused on balancing
+          innovation with usability. Created as a joint venture between Monday
+          Capital and RSK , it acts as a skunkworks at the intersection of
+          scaling businesses and developing tools for the Bitcoin ecosystem.
+          </Content>
         </Card>
       </Wrapper>
 
