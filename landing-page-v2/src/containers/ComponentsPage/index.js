@@ -11,10 +11,14 @@ import Title from '../../components/Title';
 import Card from '../../components/Card';
 import Content from '../../components/Content';
 
-const Wrapper = styled.div`
+const Wrapper = styled.div` 
+  display: flex;
+  justify-content:center;
   width: 100%;
   text-align: center;
-  margin: 4em 0;
+  margin: 4em auto;
+  padding:0 4em;
+  
 `;
 
 export default function ComponentsPage() {
@@ -38,6 +42,7 @@ export default function ComponentsPage() {
       <Wrapper>
         <Card
           height="300px"
+          width="500px"
           hasShadow
           style={{
             backgroundImage:
