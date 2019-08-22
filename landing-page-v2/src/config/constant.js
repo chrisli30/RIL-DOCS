@@ -1,23 +1,33 @@
 export const landPageMenu = [
   {
-    name: 'Documentation',
-    link: 'https://developers.doc.rsk.co/docs',
-    ifOpenNewTab: false,
-  },
-  {
-    name: 'RSK',
+    name: 'Home',
     link: 'https://www.rsk.co/',
     ifOpenNewTab: true,
   },
   {
-    name: 'RIFOS',
-    link: 'https://www.rifos.org/',
+    name: 'Deep Dive',
+    link: 'https://www.rsk.co/',
     ifOpenNewTab: true,
   },
   {
-    name: 'Discussions',
-    link: 'https://developers.doc.rsk.co/discuss',
-    ifOpenNewTab: false,
+    name: 'Integration',
+    link: 'https://www.rsk.co/',
+    ifOpenNewTab: true,
+  },
+  {
+    name: 'Talk to Us',
+    link: 'https://www.rsk.co/',
+    ifOpenNewTab: true,
+  },
+  {
+    name: 'Blog',
+    link: 'https://www.rsk.co/',
+    ifOpenNewTab: true,
+  },
+  {
+    name: 'Documentation',
+    link: 'https://www.rsk.co/',
+    ifOpenNewTab: true,
   },
 ];
 

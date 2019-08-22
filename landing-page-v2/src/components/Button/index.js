@@ -22,6 +22,7 @@ function Button(props) {
       href={props.href}
       height={props.height}
       width={props.width}
+      style={props.style}
     >
       {Children.toArray(props.children)}
     </StyledA>
@@ -37,6 +38,7 @@ function Button(props) {
         onClick={props.handleRoute}
         height={props.height}
         width={props.width}
+        style={props.style}
       >
         {Children.toArray(props.children)}
       </StyledButton>
@@ -55,6 +57,7 @@ Button.propTypes = {
   height: PropTypes.string,
   width: PropTypes.string,
   children: PropTypes.node.isRequired,
+  style: PropTypes.object,
 };
 
 export default Button;

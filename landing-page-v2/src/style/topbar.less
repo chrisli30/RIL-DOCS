@@ -3,7 +3,9 @@
     width: 100%;
     z-index: 10;
     background-color: white;
-
+    .ant-layout-header{
+        height: 5em;
+    }
     @media @phone {
         .ant-layout-header {
             padding-left: 0px;
@@ -29,6 +31,7 @@
 .isoLeft,
 .isoRight {
     display: flex;
+    height: 5em;
 }
 
 .isoLeft {
@@ -99,7 +102,8 @@
         padding-left: 18px;
         padding-right: 18px;
         display: inline-block;
-
+        height: 100%;
+        line-height: 5em;
         @media @tablet-strict {
             padding-left: 8px;
             padding-right: 8px;
@@ -107,26 +111,12 @@
 
         a {
             color: @fontColor;
-
+            transform: scale(.9);
             i {
                 padding-left: 6px;
-                font-size: 16px;
-            }
-        }
-
-        // border style for the last <li><a>
-        &:last-of-type a {
-            border: 1px solid @fontColor;
-            padding: 6px 12px;
-
-            i {
-                font-weight: 700;
-                margin-right: 4px;
-            }
-
-            &:hover {
-                background-color: rgba(153, 153, 153, 0.2);
-                .transition(background-color .5s ease);
+                font-size: 12px;
+                font-weight: 200;
+                
             }
         }
 

@@ -1,35 +1,40 @@
 /**
  *
- * Card.js
+ * ImagePie.js
  *
- * A common Card
+ * A common ImagePie
  */
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
-import StyledCard from './StyledCard';
+import StyledPie from './StyledPie';
 
-function Card(props) {
+function ImagePie(props) {
   return (
-    <StyledCard {...props} style={props.style}>
+    <StyledPie {...props} style={props.style}>
       {Children.toArray(props.children)}
-    </StyledCard>
+    </StyledPie>
   );
 }
 
-Card.propTypes = {
+ImagePie.propTypes = {
   children: PropTypes.node,
   hasShadow: PropTypes.bool,
   width: PropTypes.string,
   height: PropTypes.string,
+  radius: PropTypes.string,
   style: PropTypes.object,
+  url: PropTypes.string,
+
 };
-Card.defaultProps = {
+ImagePie.defaultProps = {
   children: <div></div>,
   hasShadow: '',
   width: '',
   height: '',
+  radius: '',
+  url: '',
   style: {},
 };
 
 
-export default Card;
+export default ImagePie;

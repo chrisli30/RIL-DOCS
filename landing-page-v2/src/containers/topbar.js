@@ -1,22 +1,27 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Layout, Menu, Dropdown, Icon, message, Button, Input, Row, Col, Tag } from 'antd';
-import { cloudinaryConfig, CloudinaryImage, CloudinaryVideo } from '../components/react-cloudinary';
+import { Layout } from 'antd';
+import { cloudinaryConfig } from '../components/react-cloudinary';
 
 import { getCurrentTheme } from './ThemeSwitcher/config';
 import { themeConfig } from '../config';
 import { landPageMenu } from '../config/constant';
-const menuOnDeskTop = landPageMenu.map((item) => (
-  <li key={`menu-list-${item.name}`} className="hideOnMobile">
-    <a href={item.link} target={item.ifOpenNewTab ? '_blank' : '_self'}>{item.name}
-    </a>
-  </li>
-));
+import Button from '../components/Button';
+import NavLink from '../components/Link';
+const DocBtn = <Button href="https://www.rsk.co/" className="hideOnMobile" width="150px" height="40px" style={{ fontSize: '12px' }}>Documentation</Button>;
+const menuOnDeskTop = landPageMenu.map((item, idx) => {
+  if (idx < landPageMenu.length - 1) {
+    return (<li key={`menu-list-${item.name}`} className="hideOnMobile">
+      <NavLink link={item.link} target={item.ifOpenNewTab ? '_blank' : '_self'} content={item.name} />
+    </li>);
+  }
+  return <li key={`menu-list-${item.name}`} className="hideOnMobile">{DocBtn}</li>;
+});
 
 const menuOnMobile = landPageMenu.map((item) => (
   <li key={`menu-list-${item.name}-mobile`} className="hideOnLarge">
-    <a href={item.link} alt={item.name}>{item.name}</a>
+    <NavLink link={item.link} content={item.name} />
   </li>
 ));
 
@@ -35,16 +40,7 @@ class Topbar extends React.PureComponent {
     this.toggleCollapsed = this.toggleCollapsed.bind(this);
   }
 
-  componentWillMount() {
-
-  }
-
-  componentWillReceiveProps(nextProps) {
-  }
-
   toggleCollapsed() {
-    console.log('toggle', this.state.collapsed);
-
     this.setState({
       collapsed: !this.state.collapsed,
     });
@@ -69,9 +65,9 @@ class Topbar extends React.PureComponent {
             <div className="horizontalWrapper">
               <div className="topbarWrapper">
                 <div className="isoLeft">
-                  <div className="logo-container" style={{ margin: '0px' }}>
+                  <div className="logo-container" style={{ marginTop: '-10px' }}>
                     <Link to="/">
-                      <img height="64px" width="auto" src="https://files.readme.io/c8e016f-rsk1.png" alt="logo" />
+                      <img height="78px" width="auto" src="https://files.readme.io/c8e016f-rsk1.png" alt="logo" />
                     </Link>
                   </div>
                 </div>
