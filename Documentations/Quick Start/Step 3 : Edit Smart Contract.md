@@ -54,4 +54,42 @@ function transfer(address _to, uint256 _value) public       returns (bool succes
 }
 ```
 
-#### Edit the EIP20 token 
+#### Edit the EIP20 Token Name
+At the top of the EIP20.sol token contract, the constructor function has input of initial amount, token name, decimal unit, and token symbol. You can customize these paramsters to create your own token.
+
+```javascript
+function EIP20(
+    uint256 _initialAmount,
+    string _tokenName,
+    uint8 _decimalUnits,
+    string _tokenSymbol
+) public {
+    balances[msg.sender] = _initialAmount;               // Give the creator all initial tokens
+    totalSupply = _initialAmount;                        // Update total supply
+    name = _tokenName;                                   // Set the name for display purposes
+    decimals = _decimalUnits;                            // Amount of decimals for display purposes
+    symbol = _tokenSymbol;                               // Set the symbol for display purposes
+    emit Transfer(msg.sender, msg.sender, 0); 
+    emit Approval(msg.sender, msg.sender, 0);
+}
+```
+
+To set those values, open 3_deploy_tokens.js in folder truffle/migrations/ . The file content looks like this. 
+
+``` javascript
+const EIP20 = artifacts.require('./EIP20.sol');
+
+module.exports = (deployer) => {
+  deployer.deploy(EIP20, 10000, 'Simon Bucks', 1, 'SBX');
+};
+
+```
+
+Now let's change the name to something you like, e.g. Flower Token. And we are ready to deploy this contract to generate our own 10000 Flower Tokens!
+```javascript
+module.exports = (deployer) => {
+  deployer.deploy(EIP20, 10000, 'Flower Token', 1, 'FLT');
+};
+```
+
+

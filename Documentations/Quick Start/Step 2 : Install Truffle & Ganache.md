@@ -1,4 +1,4 @@
-## Step 1 : Install RSK local node
+## Step 2 : Install Truffle and Ganache
 
 <style>
   img{
