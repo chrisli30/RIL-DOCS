@@ -43,12 +43,12 @@ Once got Federation address, you can send Bitcoin to it from your whitelisted Bi
 
 > Note: You need to send a minimum amount of 0.01 BTC for conversion.
 
-**1.6 Get RBTC address with BTC private key**
+**1.5 Get RBTC address with BTC private key**
 You can get RBTC address with your BTC private key from [https://utils.rsk.co/](https://utils.rsk.co/).
 
 > Note: when entering Bitcoin private key do not include *p2pkh:* in the front.
 
-**1.7 Check RBTC balance on Testnet**
+**1.6 Check RBTC balance on Testnet**
 Get it by using MyCrypto (select the RSK network, the Bridge contract is one of the existing contracts) or invoking getFederationAddress method of the Bridge contract at address: 0x0000000000000000000000000000000001000006 (for testnet or mainnet.
 
 You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your RBTC balance
