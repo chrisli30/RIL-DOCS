@@ -18,5 +18,8 @@ Img.propTypes = {
   alt: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
+Img.defaultProps = {
+  className: '',
+};
 
 export default Img;

@@ -24,7 +24,7 @@ Card.propTypes = {
   style: PropTypes.object,
 };
 Card.defaultProps = {
-  children: <div></div>,
+  children: null,
   hasShadow: '',
   width: '',
   height: '',

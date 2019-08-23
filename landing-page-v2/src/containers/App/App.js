@@ -6,14 +6,14 @@ import { Debounce } from 'react-throttle';
 import { WindowResizeListener } from 'react-window-resize-listener';
 import { ThemeProvider } from 'styled-components';
 import appActions from '../../redux/app/actions';
-import Topbar from '../topbar';
+import Topbar from '../../components/Toolbar';
 import AppRouter from './AppRouter';
 import { AppLocale } from '../../index';
 import themes from '../../config/themes';
-import { themeConfig, siteConfig } from '../../config';
+import { themeConfig } from '../../config';
 import AppHolder from './commonStyle';
 
-const { Content, Footer } = Layout;
+const { Content } = Layout;
 const { toggleAll } = appActions;
 
 export class App extends React.PureComponent {

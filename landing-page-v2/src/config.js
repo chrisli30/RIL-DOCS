@@ -5,7 +5,7 @@ export default {
 const siteConfig = {
   siteName: 'RSK Developer Portal',
   siteIcon: 'ion-flash',
-  footerText: 'Copyright ©RSK Labs. All rights reserved.',
+  footerText: 'Copyright rsk.co All rights reserved.',
 };
 
 const themeConfig = {

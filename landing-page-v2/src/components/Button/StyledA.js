@@ -8,15 +8,12 @@ const StyledA = styled.a`
   line-height: ${(props) => (props.height ? props.height : '')};
   width: ${(props) => (props.width ? props.width : 'auto')};
   height: ${(props) => (props.height ? props.height : 'auto')};
-  background-color: ${(props) => (props.isSolid ? '#55bca6' : '#fff')};
-  color: ${(props) => (props.isSolid ? '#fff' : '#55bca6')} !important;
+  background-color: ${(props) => (props.isSolid ? props.theme.palette.text[5] : '#fff')};
+  color: ${(props) => (props.isSolid ? '#fff' : props.theme.palette.text[5])};
   &:active {
-    background: ${(props) => (props.isSolid ? '#fff' : '#55bca6')};
-    color: ${(props) => (props.isSolid ? '#55bca6' : '#fff')};
+    background: ${(props) => (props.isSolid ? '#fff' : props.theme.palette.text[5])};
+    color: ${(props) => (props.isSolid ? props.theme.palette.text[5] : '#fff')};
   }
-  &:hover {
-    color: '#55bca6';
-  };
   box-shadow: ${(props) =>
     props.hasShadow
       ? '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'

@@ -1,4 +1,44 @@
-const theme = {};
+const primaryColor = '#212121';
+const fontColor = '#9dafbd';
+const bgColor = '#212121';
+const borderColor = '#ddd';
+const mainColor = '#55bca6';
+const smMin = 576;
+const mdMin = 768;
+const lgMin = 992;
+const xlMin = 1200;
+const xxlMin = 1600;
+const xsMax = (smMin - 1); // 575px
+const smMax = (mdMin - 1); // 767px
+const mdMax = (lgMin - 1); // 991px
+const lgMax = (xlMin - 1); // 1199px
+const xlMax = (xxlMin - 1); // 1599px
+
+const theme = {
+  primaryColor,
+  fontColor,
+  bgColor,
+  borderColor,
+  mainColor,
+  smMin,
+  mdMin,
+  lgMin,
+  xlMin,
+  xxlMin,
+  xsMax,
+  smMax,
+  mdMax,
+  lgMax,
+  xlMax,
+  phone: `only screen and (max-width:${smMin}px )`,
+  tablet: `only screen and (min-width: ${mdMin}px)`,
+  tabletStrict: `only screen and (min-width: ${mdMin}px) and (max-width: ${mdMax}px)`,
+  desktop: `only screen and (min-width: ${lgMin}px)`,
+  desktopStrict: `only screen and (min-width: ${lgMin}px) and (max-width: ${lgMax}px)`,
+  xl: `only screen and (min-width: ${xlMin}px)`,
+  xlStrict: `only screen and (min-width: ${xlMin}px) and (max-width: ${xlMax}px)`,
+  xxl: `only screen and (min-width: ${xxlMin}px)`,
+};
 
 theme.palette = {
   primary: [
@@ -77,6 +117,7 @@ theme.palette = {
     '#979797', // 2: Text
     '#797979', // 3: TextDark
     '#6a6c6a', // 4: Heading Lighten 22%
+    '#55bca6', // 5: RSK Green
   ],
   border: [
     '#e9e9e9', // 0: Border

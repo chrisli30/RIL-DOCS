@@ -76,7 +76,7 @@ const MenuItems = footerMenuData.map((item) => <MyLink key={item.name} link={ite
 
 export default function ComponentsPage() {
   return (
-    <div>
+    <div style={{ fontSize: 16, marginTop: '5em' }}>
       <Title>Solid Button</Title>
       <Wrapper>
         <Button isSolid hasShadow height="50px" width="200px">
