@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Highlight = styled.span`
-  color: #55bca6;
+  color: ${(props) => props.theme.mainColor};
 `;
 
 export default Highlight;

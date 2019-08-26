@@ -8,11 +8,11 @@ const StyledA = styled.a`
   line-height: ${(props) => (props.height ? props.height : '')};
   width: ${(props) => (props.width ? props.width : 'auto')};
   height: ${(props) => (props.height ? props.height : 'auto')};
-  background-color: ${(props) => (props.isSolid ? props.theme.palette.text[5] : '#fff')};
-  color: ${(props) => (props.isSolid ? '#fff' : props.theme.palette.text[5])};
+  background-color: ${(props) => (props.isSolid ? props.theme.mainColor : '#fff')};
+  color: ${(props) => (props.isSolid ? '#fff' : props.theme.mainColor)};
   &:active {
-    background: ${(props) => (props.isSolid ? '#fff' : props.theme.palette.text[5])};
-    color: ${(props) => (props.isSolid ? props.theme.palette.text[5] : '#fff')};
+    background: ${(props) => (props.isSolid ? '#fff' : props.theme.mainColor)};
+    color: ${(props) => (props.isSolid ? props.theme.mainColor : '#fff')};
   }
   box-shadow: ${(props) =>
     props.hasShadow

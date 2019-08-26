@@ -27,7 +27,7 @@ ImagePie.propTypes = {
 
 };
 ImagePie.defaultProps = {
-  children: <div></div>,
+  children: null,
   hasShadow: '',
   width: '',
   height: '',

@@ -6,11 +6,11 @@ const StyledButton = styled.button`
   line-height: ${(props) => (props.height ? props.height : '')};
   width: ${(props) => (props.width ? props.width : 'auto')};
   height: ${(props) => (props.height ? props.height : 'auto')};
-  background-color: ${(props) => (props.isSolid ? '#55bca6' : '#fff')};
-  color: ${(props) => (props.isSolid ? '#fff' : '#55bca6')};
+  background-color: ${(props) => (props.isSolid ? props.theme.mainColor : '#fff')};
+  color: ${(props) => (props.isSolid ? '#fff' : props.theme.mainColor)};
   &:active {
-    background: ${(props) => (props.isSolid ? '#fff' : '#55bca6')};
-    color: ${(props) => (props.isSolid ? '#fff' : '#55bca6')};
+    background: ${(props) => (props.isSolid ? '#fff' : props.theme.mainColor)};
+    color: ${(props) => (props.isSolid ? '#fff' : props.theme.mainColor)};
   }
   box-shadow: ${(props) =>
     props.hasShadow
