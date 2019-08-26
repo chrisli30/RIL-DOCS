@@ -7,7 +7,7 @@
   }
 </style>
 
-RSK node can be installed on all major platforms, including Linux, Windows, and Mac. In this tutorial, we provide step-by-step instructions for running a local RegNet node through Docker. Docker installation supports Mac, Windows, and Linux.
+The RSK node can be installed on all major platforms, including Linux, Windows, and Mac. In this tutorial, we provide step-by-step instructions for running a local RegNet node through Docker. Docker installation supports Mac, Windows, and Linux.
 
 #### Prepare the Environment 
 The tutorial project files can be downloaded from this [github repo](https://github.com/rsksmart/truffle-integration).
