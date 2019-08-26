@@ -7,7 +7,7 @@
   }
 </style>
 
-In this tutorial files, we aleady have two sample smart contracts available for testing. 
+In this tutorial, we have two sample smart contracts available for experiments. 
 
 - Coin.sol a minimal token contract
 - EIP20.sol an implementation of [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md) tokens provided by [ConsenSys](https://github.com/ConsenSys/Tokens)
@@ -20,8 +20,9 @@ ls
 ```
 There are two .sol files in this directory: EIP20Interface.sol and EIP20.sol
 
-#### View the EIP20Interface.sol
+#### Understand the Smart Contracts Files
 EIP20Interface.sol defines the required functions for the ERC20 base standard.
+
 ``` javascript
 /// @param _owner The address from which the balance will be retrieved
 /// @return The balance
@@ -35,7 +36,6 @@ function balanceOf(address _owner) public view returns (uint256 balance);
 function transfer(address _to, uint256 _value) public returns (bool success);
 ```
 
-#### View the EIP20.sol
 EIP20.sol provides the implementation for the functions declared in EIP20Interface.sol
 
 ``` javascript
@@ -74,7 +74,7 @@ function EIP20(
 }
 ```
 
-To set those values, open 3_deploy_tokens.js in folder truffle/migrations/ . The file content looks like this. 
+To set those values, open 3_deploy_tokens.js in folder truffle/migrations/. This is a migration script that controls the deployment of smart constrcts. We will talk more about migrations in next step. The file content looks like this. 
 
 ``` javascript
 const EIP20 = artifacts.require('./EIP20.sol');

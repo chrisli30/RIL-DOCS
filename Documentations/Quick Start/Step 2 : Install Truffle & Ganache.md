@@ -13,10 +13,10 @@ Truffle and Ganache provides a development environment, testing framework and as
 #### Install Truffle
 - Navigate to under /truffle
 ```shell
-cd truffle
+cd <tutorial-root>/truffle
 ```
 
-- Install the required dependencies for ganache
+- Install the required dependencies for truffle
 ```shell
 npm install
 ```
@@ -36,7 +36,7 @@ regtest: {
 
 - Navigate to under /ganache
 ```shell
-cd ganache
+cd <tutorial-root>/ganache
 ```
 
 - Install the required dependencies for ganache
@@ -48,3 +48,6 @@ npm install
 ```shell
 npm start
 ```
+
+#### More on Truffle and Ganache
+Learn more about turffle's commands, visit the official website [here](https://www.trufflesuite.com/docs/truffle/overview)
