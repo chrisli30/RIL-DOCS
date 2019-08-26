@@ -61,6 +61,8 @@ Federation Address:
 2.1 Get BTC address with RBTC private key
 If you forgot BTC public address you can retrieve it with RBTC private key from [https://utils.rsk.co/](https://utils.rsk.co/). 
 
+> Note: If you want to generate the address on your local machine, git clone this repo [https://github.com/rsksmart/utils/](https://github.com/rsksmart/utils/) and open index.html in Browser.
+
 2.1 Check balance of BTC address on Bitcoin Testnet
 You can either use Electrum wallet downloaded earlier or from any Bitcoin explorer.
 
