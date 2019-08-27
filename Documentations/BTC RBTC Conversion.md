@@ -63,6 +63,7 @@ If you forgot BTC public address you can retrieve it with RSK private key from [
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
 > Note: The minimum amount to send is 0.005 RBTC for Testnet
+Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail
 
 **2.3 Check balance of BTC address on Bitcoin Testnet**
 You can either use Electrum wallet downloaded earlier or from any Bitcoin explorer to check the balance.
@@ -115,6 +116,7 @@ If you forgot BTC public address you can retrieve it with RSK private key from [
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
 > Note: The minimum amount to send is 0.008 RBTC for Mainnet
+Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail
 
 **2.3 Check balance of BTC address**
 You can either use Electrum wallet downloaded earlier or from any Bitcoin explorer to check the balance.
