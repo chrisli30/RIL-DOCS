@@ -24,11 +24,15 @@ The minimum amount of Bitcoin to convert is **0.01 BTC** for Testnet.
 We recommend to use Electrum BTC wallet for connecting to BTC testnet.
 * First, you will need to download the wallet from [Electrum Website](https://bitzuma.com/posts/a-beginners-guide-to-the-electrum-bitcoin-wallet/)
 * Second, install the App.
-* Then, start Electrum in testnet mode, for example on MacOS.
+* Then, start Electrum in testnet mode, for example on MacOS
 `/Applications/Electrum.app/Contents/MacOS/Electrum --testnet`
 * Once Electrum starts, create or import a wallet and go to the third tab "Receive". You will see a Bitcoin Testnet address like below.
 
 > Note: The Bitcoin wallet needs to be legacy (not Segwit) whose public key starts with either *m* or *n*, and private key starting with *p2pkh:*
+
+![Create a Legacy(P2PK) wallet](../media/images/legacy-private-key.png)
+
+![Get a Bitcoin testnet address in Electrum Wallet](../media/images/electrum-wallet.png)
 
 **1.2 Get test Bitcoin from testnet Faucet**
 There are a few options to get Bitcoin on Testnet. We use [https://testnet-faucet.mempool.co/](https://testnet-faucet.mempool.co/)
@@ -38,6 +42,8 @@ You can contact us in RSK official [Gitter channels](https://gitter.im/rsksmart/
 
 **1.4 Send Bitcoin to RSK Federation address**
 The Federation address is retrieved by making a Smart Contract call on RSK Testnet. In order to make the call, you will need to have [MyCrypto](https://mycrypto.com/contracts/interact) installed, selet RSK Testnet in *"More Networks"*, and Navigate to *"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"* to execute the call. It should look like below screenshot.
+
+![Get RSK Federation address from MyCrypto](../media/images/mycrypto-federation.png)
 
 Once got Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
 
@@ -63,7 +69,9 @@ If you forgot BTC public address you can retrieve it with RSK private key from [
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
 > Note: The minimum amount to send is 0.005 RBTC for Testnet
-Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail
+Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail. Gas Price can be set to 0.06 gwei.
+
+![Customize Gas in Metamask before send transaction on RSK](../media/images/metamask-gas-limit.png)
 
 **2.3 Check balance of BTC address on Bitcoin Testnet**
 You can either use Electrum wallet downloaded earlier or from any Bitcoin explorer to check the balance.
@@ -86,11 +94,15 @@ Any Bitcoin wallet that supports legacy(P2PK) private key works for this step, a
 
 > Note: The Bitcoin wallet needs to be legacy (not Segwit) whose public key starts with either *m* or *n*, and private key starting with *p2pkh:*
 
+![Create a Legacy(P2PK) wallet](../media/images/legacy-private-key.png)
+
 **1.2 Whitelist Bitcoin address in RSK**
 You need to complete whitelisting in this [Google Forum](https://docs.google.com/forms/d/e/1FAIpQLSfoG_qF5wPY27tqcYnFbzNv4uwwDq6JeBe5no_zoYvKH62mBA/viewform). We will contact you once receiving the form.
 
 **1.3 Send Bitcoin to RSK Federation address**
 The Federation address is retrieved by making a Smart Contract call on RSK Mainnet. In order to make the call, you will need to have [MyCrypto](https://mycrypto.com/contracts/interact) installed, selet RSK Network, and Navigate to *"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"* to execute the call. It should look like below screenshot.
+
+![Get RSK Federation address from MyCrypto](../media/images/mycrypto-federation.png)
 
 Once got Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
 
@@ -106,7 +118,6 @@ You can check balance of RBTC address on Metamask, MyCrypto, or any RSK compatib
 
 > Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your RBTC balance
 
-
 #### 2. RBTC to BTC conversion
 **2.1 Get BTC address with RBTC private key**
 If you forgot BTC public address you can retrieve it with RSK private key from [https://utils.rsk.co/](https://utils.rsk.co/). 
@@ -116,7 +127,9 @@ If you forgot BTC public address you can retrieve it with RSK private key from [
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
 > Note: The minimum amount to send is 0.008 RBTC for Mainnet
-Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail
+Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail. Gas Price can be set to 0.06 gwei.
+
+![Customize Gas in Metamask before send transaction on RSK](../media/images/metamask-gas-limit.png)
 
 **2.3 Check balance of BTC address**
 You can either use Electrum wallet downloaded earlier or from any Bitcoin explorer to check the balance.
