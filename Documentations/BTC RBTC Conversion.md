@@ -1,12 +1,5 @@
 ## BTC RBTC Conversion
 
-<style>
-  img{
-    margin:0 auto;
-    width:80%;
-  }
-</style>
-
 ### Introduction
 
 In this article we will explain step by step on how to convert from BTC to RBTC and vice versa. The process of conversion is called a **2-way peg** mechanism, which locks BTC token on BTC network in BTC-to-RBTC conversion and release the BTC token during RBTC-to-BTC conversion.
