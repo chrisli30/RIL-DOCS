@@ -1,14 +1,5 @@
 ## Step 2 : Deploy Solidity Code as RSK Smart Contract
-
-<style>
-  img{
-    margin:0 auto;
-    width:80%;
-  }
-</style>
-
 We are going to deploy the example smart contract on to RSK Testnet.
-
 
 #### Testnet and Faucet
 First we need to obtain an account on RSK Testnet and get some free RSK token from the testnet Faucet. 
