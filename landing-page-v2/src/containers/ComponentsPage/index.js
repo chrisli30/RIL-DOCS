@@ -5,7 +5,7 @@
  */
 import React from 'react';
 import styled from 'styled-components';
-import { BackTop } from 'antd';
+import { BackTop, Input, Switch } from 'antd';
 import { Link } from 'react-router-dom';
 // import { FormattedMessage } from 'react-intl';
 import Button from '../../components/Button';
@@ -17,6 +17,7 @@ import List from '../../components/List';
 import ListItem from '../../components/ListItem';
 import Footer from '../../components/Footer';
 import MyLink from '../../components/Link';
+import BasicInput from '../../components/BasicInput';
 
 import { siteConfig } from '../../config';
 
@@ -79,9 +80,19 @@ export default function ComponentsPage() {
     <div style={{ fontSize: 16, marginTop: '5em' }}>
       <Title>Solid Button</Title>
       <Wrapper>
-        <Button isSolid hasShadow height="50px" width="200px">
-          Quick Start
+        <Button isSolid height="50px" width="200px">
+          GET STARTED
         </Button>
+      </Wrapper>
+
+      <Title>Basic Input</Title>
+      <Wrapper>
+        <BasicInput placeholder="Type address here..." />
+      </Wrapper>
+
+      <Title>Switch</Title>
+      <Wrapper>
+        <Switch defaultChecked />
       </Wrapper>
 
       <Title>Hollow Button</Title>

@@ -118,6 +118,7 @@ theme.palette = {
     '#797979', // 3: TextDark
     '#6a6c6a', // 4: Heading Lighten 22%
     '#55bca6', // 5: RSK Green
+    '#6cb043', // 6: RSK Green 2
   ],
   border: [
     '#e9e9e9', // 0: Border
