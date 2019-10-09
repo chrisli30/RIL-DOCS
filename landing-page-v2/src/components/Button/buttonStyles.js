@@ -4,15 +4,15 @@ const buttonStyles = css`
   display: block;
   text-align: center;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 40px;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
   user-select: none;
   cursor: pointer;
   outline: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  border: 1px solid #55bca6;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
 `;
 
 export default buttonStyles;
